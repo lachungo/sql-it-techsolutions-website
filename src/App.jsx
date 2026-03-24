@@ -193,54 +193,44 @@ export default function SQLITTechSolutionsWebsite() {
 
       <main className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <img
-            src="/cloud-bg.png"
-            alt="Cloud background"
-            className="absolute inset-0 h-full w-full object-cover object-center opacity-55"
-          />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.12),transparent_30%),linear-gradient(135deg,rgba(3,7,18,0.82),rgba(6,11,20,0.72),rgba(2,6,23,0.86))]" />
-          <div className="absolute left-0 top-0 h-[26rem] w-[26rem] rounded-full bg-cyan-400/12 blur-3xl sm:h-[34rem] sm:w-[34rem]" />
-          <div className="absolute right-0 top-24 h-[24rem] w-[24rem] rounded-full bg-blue-500/10 blur-3xl sm:h-[32rem] sm:w-[32rem]" />
-          <div className="absolute bottom-0 left-1/3 h-[20rem] w-[20rem] rounded-full bg-indigo-500/10 blur-3xl sm:h-[26rem] sm:w-[26rem]" />
+  <img
+    src="/cloud-bg.png"
+    alt="Cloud background"
+    className="absolute inset-0 h-full w-full object-cover object-center opacity-80"
+  />
 
-          <svg
-            className="absolute inset-0 h-full w-full opacity-[0.07]"
-            viewBox="0 0 1600 900"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice"
-          >
-            <g stroke="url(#gridGlow)" strokeWidth="1">
-              <path d="M80 180H460" />
-              <path d="M460 180H760" />
-              <path d="M760 180H1100" />
-              <path d="M1100 180H1440" />
-              <path d="M280 300H640" />
-              <path d="M640 300H980" />
-              <path d="M980 300H1320" />
-              <path d="M220 480H560" />
-              <path d="M560 480H900" />
-              <path d="M900 480H1240" />
-              <path d="M360 660H760" />
-              <path d="M760 660H1180" />
-              <path d="M220 180V300" />
-              <path d="M520 180V300" />
-              <path d="M820 180V300" />
-              <path d="M1120 180V300" />
-              <path d="M420 300V480" />
-              <path d="M740 300V480" />
-              <path d="M1060 300V480" />
-              <path d="M560 480V660" />
-              <path d="M960 480V660" />
-            </g>
-            <defs>
-              <linearGradient id="gridGlow" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
-                <stop stopColor="rgba(34,211,238,0.4)" />
-                <stop offset="1" stopColor="rgba(59,130,246,0.12)" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
+  <div className="absolute inset-0 bg-gradient-to-r from-[#04101c]/55 via-[#04101c]/35 to-[#04101c]/65" />
+
+  <div className="absolute left-0 top-0 h-[22rem] w-[22rem] rounded-full bg-cyan-400/10 blur-3xl sm:h-[28rem] sm:w-[28rem]" />
+  <div className="absolute right-0 top-24 h-[20rem] w-[20rem] rounded-full bg-blue-500/8 blur-3xl sm:h-[26rem] sm:w-[26rem]" />
+
+  <svg
+    className="absolute inset-0 h-full w-full opacity-[0.03]"
+    viewBox="0 0 1600 900"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="xMidYMid slice"
+  >
+    <g stroke="url(#gridGlow)" strokeWidth="1">
+      <path d="M80 180H460" />
+      <path d="M460 180H760" />
+      <path d="M760 180H1100" />
+      <path d="M1100 180H1440" />
+      <path d="M280 300H640" />
+      <path d="M640 300H980" />
+      <path d="M980 300H1320" />
+      <path d="M220 480H560" />
+      <path d="M560 480H900" />
+      <path d="M900 480H1240" />
+    </g>
+    <defs>
+      <linearGradient id="gridGlow" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+        <stop stopColor="rgba(34,211,238,0.35)" />
+        <stop offset="1" stopColor="rgba(59,130,246,0.10)" />
+      </linearGradient>
+    </defs>
+  </svg>
+</div>
 
         <section className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-20">
           <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
@@ -251,7 +241,7 @@ export default function SQLITTechSolutionsWebsite() {
                 </span>
               </div>
 
-              <h1 className="max-w-4xl text-4xl font-semibold leading-[1.0] tracking-tight text-white sm:text-5xl md:text-6xl xl:text-[4.5rem]">
+              <h1 className="max-w-4xl text-4xl font-semibold leading-[1.0] tracking-tight text-white sm:text-5xl md:text-6xl xl:text-[4rem]">
                 Enterprise SQL Databases. Simplified.
               </h1>
 
