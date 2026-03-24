@@ -300,7 +300,7 @@ export default function SQLITTechSolutionsWebsite() {
 
             <div className="relative">
               <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur-xl sm:p-5">
-                <div className="rounded-[1.75rem] border border-white/10 bg-gradient-to-br from-slate-900/95 via-slate-900/95 to-slate-800/95 p-5 sm:p-6">
+                <div className="rounded-[1.75rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 via-cyan-400/10 to-emerald-400/10 p-5 sm:p-6">
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div>
                       <div className="text-xs uppercase tracking-[0.3em] text-cyan-300">
@@ -332,7 +332,7 @@ export default function SQLITTechSolutionsWebsite() {
                     ].map(([title, desc]) => (
                       <div
                         key={title}
-                        className="rounded-2xl border border-white/10 bg-white/5 p-4"
+                        className="rounded-2xl border border-white/10 bg-cyan-400/10 p-4"
                       >
                         <div className="text-sm font-semibold text-white">{title}</div>
                         <div className="mt-1 text-sm leading-6 text-slate-400">{desc}</div>
@@ -340,15 +340,15 @@ export default function SQLITTechSolutionsWebsite() {
                     ))}
                   </div>
 
-                  <div className="mt-6 rounded-2xl border border-white/10 bg-slate-950/60 p-4">
+                  <div className="mt-6 rounded-2xl border border-white/10 bg-cyan-400/10 p-4">
                     <div className="text-xs uppercase tracking-[0.25em] text-slate-500">
                       Best Fit Clients
                     </div>
                     <div className="mt-3 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
-                      <div className="rounded-xl bg-white/5 p-3">Banks and financial services firms</div>
-                      <div className="rounded-xl bg-white/5 p-3">Healthcare and clinical data platforms</div>
-                      <div className="rounded-xl bg-white/5 p-3">Enterprise application teams</div>
-                      <div className="rounded-xl bg-white/5 p-3">Organizations planning modernization</div>
+                      <div className="rounded-xl bg-cyan-400/10 p-3">Banks and financial services firms</div>
+                      <div className="rounded-xl bg-cyan-400/10 p-3">Healthcare and clinical data platforms</div>
+                      <div className="rounded-xl bg-cyan-400/10 p-3">Enterprise application teams</div>
+                      <div className="rounded-xl bg-cyan-400/10 p-3">Organizations planning modernization</div>
                     </div>
                   </div>
                 </div>
@@ -379,7 +379,7 @@ export default function SQLITTechSolutionsWebsite() {
               </p>
             </div>
 
-            <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-6 shadow-2xl sm:p-8">
+            <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 via-cyan-400/10 to-emerald-400/10 p-6 shadow-2xl sm:p-8">
               <div className="text-lg font-semibold text-white">Professional Highlights</div>
               <ul className="mt-5 space-y-4 text-slate-300">
                 <li>• 24+ years of SQL Server administration and database infrastructure experience</li>
@@ -551,14 +551,14 @@ export default function SQLITTechSolutionsWebsite() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-6 shadow-2xl sm:p-8">
+          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 via-cyan-400/10 to-emerald-400/10 p-6 shadow-2xl sm:p-8">
             <div className="text-lg font-semibold text-white">SQL Server Troubleshooting Toolkit</div>
             <p className="mt-2 text-slate-400">
               Core playbooks used to approach performance engineering, resiliency, and production database stabilization.
             </p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               {playbooks.map((playbook) => (
-                <div key={playbook.title} className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div key={playbook.title} className="rounded-2xl border border-white/10 bg-cyan-400/10 p-4">
                   <div className="text-sm font-semibold text-white">{playbook.title}</div>
                   <div className="mt-2 text-sm leading-6 text-slate-400">{playbook.desc}</div>
                 </div>
