@@ -162,10 +162,87 @@ export default function SQLITTechSolutionsWebsite() {
       </header>
 
       <main className="relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-0">
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <div className="absolute left-0 top-0 h-[24rem] w-[24rem] rounded-full bg-cyan-400/10 blur-3xl sm:h-[32rem] sm:w-[32rem]" />
           <div className="absolute right-0 top-40 h-[22rem] w-[22rem] rounded-full bg-blue-500/10 blur-3xl sm:h-[30rem] sm:w-[30rem]" />
           <div className="absolute bottom-0 left-1/3 h-[20rem] w-[20rem] rounded-full bg-indigo-500/10 blur-3xl sm:h-[26rem] sm:w-[26rem]" />
+
+          <svg
+            className="absolute inset-0 h-full w-full opacity-[0.10]"
+            viewBox="0 0 1600 900"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice"
+          >
+            <g stroke="url(#gridGlow)" strokeWidth="1">
+              <path d="M80 180H460" />
+              <path d="M460 180H760" />
+              <path d="M760 180H1100" />
+              <path d="M1100 180H1440" />
+              <path d="M280 300H640" />
+              <path d="M640 300H980" />
+              <path d="M980 300H1320" />
+              <path d="M220 480H560" />
+              <path d="M560 480H900" />
+              <path d="M900 480H1240" />
+              <path d="M360 660H760" />
+              <path d="M760 660H1180" />
+              <path d="M220 180V300" />
+              <path d="M520 180V300" />
+              <path d="M820 180V300" />
+              <path d="M1120 180V300" />
+              <path d="M420 300V480" />
+              <path d="M740 300V480" />
+              <path d="M1060 300V480" />
+              <path d="M560 480V660" />
+              <path d="M960 480V660" />
+            </g>
+
+            <g fill="rgba(103,232,249,0.18)" stroke="rgba(103,232,249,0.45)" strokeWidth="1.5">
+              <rect x="120" y="130" rx="18" ry="18" width="200" height="96" />
+              <rect x="420" y="130" rx="18" ry="18" width="200" height="96" />
+              <rect x="720" y="130" rx="18" ry="18" width="220" height="96" />
+              <rect x="1040" y="130" rx="18" ry="18" width="240" height="96" />
+
+              <rect x="180" y="252" rx="18" ry="18" width="220" height="96" />
+              <rect x="500" y="252" rx="18" ry="18" width="220" height="96" />
+              <rect x="840" y="252" rx="18" ry="18" width="220" height="96" />
+              <rect x="1180" y="252" rx="18" ry="18" width="220" height="96" />
+
+              <rect x="260" y="432" rx="18" ry="18" width="240" height="96" />
+              <rect x="600" y="432" rx="18" ry="18" width="240" height="96" />
+              <rect x="940" y="432" rx="18" ry="18" width="240" height="96" />
+
+              <rect x="420" y="612" rx="18" ry="18" width="260" height="96" />
+              <rect x="840" y="612" rx="18" ry="18" width="280" height="96" />
+            </g>
+
+            <g fill="rgba(255,255,255,0.55)" fontSize="22" fontFamily="Arial, sans-serif" letterSpacing="2">
+              <text x="160" y="186">VPC / VNET</text>
+              <text x="456" y="186">APP TIER</text>
+              <text x="774" y="186">SQL SERVER</text>
+              <text x="1096" y="186">OBSERVABILITY</text>
+
+              <text x="230" y="308">LOAD BALANCER</text>
+              <text x="552" y="308">AG LISTENER</text>
+              <text x="894" y="308">PRIMARY DB</text>
+              <text x="1230" y="308">SECONDARY DB</text>
+
+              <text x="318" y="488">BACKUPS</text>
+              <text x="656" y="488">DR SITE</text>
+              <text x="994" y="488">REPORTING</text>
+
+              <text x="494" y="668">AUTOMATION</text>
+              <text x="926" y="668">AWS / AZURE</text>
+            </g>
+
+            <defs>
+              <linearGradient id="gridGlow" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+                <stop stopColor="rgba(34,211,238,0.4)" />
+                <stop offset="1" stopColor="rgba(59,130,246,0.12)" />
+              </linearGradient>
+            </defs>
+          </svg>
         </div>
 
         <section className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-24">
@@ -178,7 +255,7 @@ export default function SQLITTechSolutionsWebsite() {
               </div>
 
               <h1 className="max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl md:text-7xl">
-                Premium database consulting for mission-critical SQL Server environments.
+                Enterprise SQL Databases. Simplified.
               </h1>
 
               <p className="mt-6 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg md:text-xl md:leading-8">
@@ -186,6 +263,17 @@ export default function SQLITTechSolutionsWebsite() {
                 strengthen resilience, and modernize database platforms across SQL Server, AWS, and Azure.
                 The focus is high-value delivery: lower risk, better uptime, faster systems, and executive-ready outcomes.
               </p>
+
+              <div className="mt-4">
+                <a
+                  href="https://www.linkedin.com/in/louis-achungo/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-cyan-300 hover:text-cyan-200"
+                >
+                  View LinkedIn Profile
+                </a>
+              </div>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a
@@ -516,12 +604,12 @@ export default function SQLITTechSolutionsWebsite() {
                 <div>
                   <span className="font-semibold text-white">LinkedIn:</span>{" "}
                   <a
-                    href="https://www.linkedin.com/in/louis-achungo"
+                    href="https://www.linkedin.com/in/louis-achungo/"
                     target="_blank"
                     rel="noreferrer"
                     className="text-cyan-300 hover:text-cyan-200"
                   >
-                    linkedin.com/in/louis-achungo
+                    linkedin.com/in/louis-achungo/
                   </a>
                 </div>
                 <div>
