@@ -232,130 +232,102 @@ export default function SQLITTechSolutionsWebsite() {
   </svg>
 </div>
 
-        <section className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-20">
-          <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
-            <div className="relative">
-              <div className="mb-5 inline-flex w-fit max-w-full rounded-full border border-cyan-300/20 bg-white/5 px-4 py-2 text-xs font-medium text-cyan-200 shadow-lg shadow-cyan-900/10 backdrop-blur sm:text-sm">
-                <span className="truncate">
-                  Trusted SQL Server consulting for banking, healthcare, and enterprise data platforms
-                </span>
-              </div>
+        <section className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-24">
+  <div className="grid items-center gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:gap-10">
 
-              <h1 className="max-w-4xl text-4xl font-semibold leading-[1.0] tracking-tight text-white sm:text-5xl md:text-6xl xl:text-[4rem]">
-                Enterprise SQL Databases Architecture. Simplified.
-              </h1>
+    {/* LEFT SIDE */}
+    <div className="relative">
 
-              <p className="mt-6 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg md:text-xl md:leading-8">
-                High-performance SQL Server architecture, cloud modernization, resilience engineering,
-                and production-grade delivery for enterprise platforms that cannot afford downtime.
-              </p>
+      {/* Authority Badge */}
+      <div className="mb-4 inline-flex w-fit rounded-full border border-cyan-300/30 bg-cyan-400/10 px-4 py-2 text-xs font-medium text-cyan-100 backdrop-blur">
+        Trusted by enterprise teams in banking, healthcare, and high-transaction environments
+      </div>
 
-              <div className="mt-4">
-                <a
-                  href="https://www.linkedin.com/in/louis-achungo/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-cyan-300 transition hover:text-cyan-200"
-                >
-                  View LinkedIn Profile
-                </a>
-              </div>
+      {/* HEADLINE */}
+      <h1 className="max-w-3xl text-4xl font-semibold leading-[1.02] tracking-tight text-white sm:text-5xl md:text-6xl xl:text-[3.6rem]">
+        Enterprise SQL Architecture. Simplified.
+      </h1>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                <a
-                  href="#contact"
-                  className="rounded-2xl bg-white px-6 py-3.5 text-center font-semibold text-slate-950 shadow-2xl transition hover:-translate-y-0.5"
-                >
-                  Book a Consultation
-                </a>
-                <a
-                  href="#featured-projects"
-                  className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3.5 text-center font-semibold text-white backdrop-blur transition hover:bg-white/10"
-                >
-                  View Featured Work
-                </a>
-              </div>
+      {/* SUBTEXT */}
+      <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg md:text-xl md:leading-8">
+        Stabilize production systems, eliminate performance bottlenecks, and modernize SQL Server environments across AWS and Azure — without risking downtime.
+      </p>
 
-              <div className="mt-8 rounded-3xl border border-cyan-300/20 bg-white/5 p-5 shadow-2xl backdrop-blur-xl">
-                <div className="grid gap-2 sm:grid-cols-2">
-                  <div className="rounded-2xl border border-white/10 bg-cyan-400/10 px-4 py-3 text-sm text-cyan-100">✔ Reduced blocking by up to 70% in production systems</div>
-                  <div className="rounded-2xl border border-white/10 bg-cyan-400/10 px-4 py-3 text-sm text-cyan-100">✔ Cut query latency by ~50% across enterprise workloads</div>
-                  <div className="rounded-2xl border border-white/10 bg-cyan-400/10 px-4 py-3 text-sm text-cyan-100">✔ Restored sub-second response times under peak load</div>
-                  <div className="rounded-2xl border border-white/10 bg-cyan-400/10 px-4 py-3 text-sm text-cyan-100">✔ Validated HA/DR recovery against defined RTO targets</div>
-                </div>
-              </div>
+      {/* TRUST INDICATORS */}
+      <div className="mt-5 flex flex-wrap gap-4 text-sm text-slate-400">
+        <span>✔ 24+ years experience</span>
+        <span>✔ Banking & healthcare systems</span>
+        <span>✔ High-transaction environments</span>
+      </div>
 
-              <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-                {metrics.map(([value, label]) => (
-                  <div
-                    key={value}
-                    className="rounded-3xl border border-cyan-400/20 bg-cyan-400/10 p-5 shadow-xl backdrop-blur-sm"
-                  >
-                    <div className="text-3xl font-semibold text-white">{value}</div>
-                    <div className="mt-2 text-sm leading-6 text-slate-400">{label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
+      {/* CTA */}
+      <div className="mt-8 flex flex-col gap-3 sm:flex-row">
 
-            <div className="relative">
-              <div className="rounded-[2rem] border border-cyan-400/20 bg-cyan-400/10 p-4 shadow-2xl backdrop-blur-xl sm:p-5">
-                <div className="rounded-[1.75rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 via-cyan-400/10 to-emerald-400/10 p-5 sm:p-6">
-                  <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                    <div>
-                      <div className="text-xs uppercase tracking-[0.3em] text-cyan-300">
-                        Advisory Focus
-                      </div>
-                      <div className="mt-2 text-2xl font-semibold text-white">
-                        Enterprise SQL Leadership
-                      </div>
-                    </div>
-                    <div className="w-fit rounded-2xl border border-cyan-300/20 bg-cyan-300/10 px-3 py-2 text-xs text-cyan-100">
-                      Atlanta, GA
-                    </div>
-                  </div>
+        <a
+          href="#contact"
+          className="rounded-2xl bg-cyan-300 px-6 py-3.5 text-center font-semibold text-slate-950 shadow-lg hover:bg-cyan-200 transition"
+        >
+          Book a Consultation
+        </a>
 
-                  <div className="mt-6 space-y-4">
-                    {[
-                      [
-                        "Performance Engineering",
-                        "Reduce blocking, tune workloads, and stabilize high-transaction systems.",
-                      ],
-                      [
-                        "Cloud Migration Strategy",
-                        "Move SQL Server workloads to AWS and Azure with clean validation paths.",
-                      ],
-                      [
-                        "Resilience & Continuity",
-                        "Strengthen backup, recovery, failover, and operational readiness.",
-                      ],
-                    ].map(([title, desc]) => (
-                      <div
-                        key={title}
-                        className="rounded-2xl border border-white/10 bg-cyan-400/10 p-4"
-                      >
-                        <div className="text-sm font-semibold text-white">{title}</div>
-                        <div className="mt-1 text-sm leading-6 text-slate-400">{desc}</div>
-                      </div>
-                    ))}
-                  </div>
+        <a
+          href="#featured-projects"
+          className="rounded-2xl border border-cyan-300/30 bg-cyan-400/10 px-6 py-3.5 text-center font-semibold text-cyan-100 backdrop-blur hover:bg-cyan-400/20 transition"
+        >
+          View Architecture Work
+        </a>
 
-                  <div className="mt-6 rounded-2xl border border-white/10 bg-cyan-400/10 p-4">
-                    <div className="text-xs uppercase tracking-[0.25em] text-slate-500">
-                      Best Fit Clients
-                    </div>
-                    <div className="mt-3 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
-                      <div className="rounded-xl bg-cyan-400/10 p-3">Banks and financial services firms</div>
-                      <div className="rounded-xl bg-cyan-400/10 p-3">Healthcare and clinical data platforms</div>
-                      <div className="rounded-xl bg-cyan-400/10 p-3">Enterprise application teams</div>
-                      <div className="rounded-xl bg-cyan-400/10 p-3">Organizations planning modernization</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      </div>
+
+      {/* HIGH-VALUE PROOF */}
+      <div className="mt-8 rounded-2xl border border-cyan-300/20 bg-cyan-400/10 p-4 text-sm text-cyan-100">
+        <div className="grid gap-2 sm:grid-cols-2">
+          <div>✔ Reduced blocking by up to 70%</div>
+          <div>✔ Cut query latency by ~50%</div>
+          <div>✔ Restored sub-second response times</div>
+          <div>✔ Validated HA/DR against RTO targets</div>
+        </div>
+      </div>
+
+    </div>
+
+    {/* RIGHT SIDE (EXECUTIVE CARD) */}
+    <div className="relative">
+      <div className="rounded-[2rem] border border-cyan-300/20 bg-cyan-400/10 p-5 backdrop-blur-xl shadow-2xl">
+
+        <div className="flex items-center justify-between">
+          <div className="text-xs uppercase tracking-[0.3em] text-cyan-200">
+            Advisory Focus
           </div>
-        </section>
+          <div className="rounded-xl border border-cyan-300/30 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-100">
+            Atlanta, GA
+          </div>
+        </div>
+
+        <div className="mt-4 text-2xl font-semibold text-white">
+          Enterprise SQL Leadership
+        </div>
+
+        <div className="mt-5 space-y-4">
+
+          {[
+            ["Performance Engineering", "Eliminate blocking, tune workloads, stabilize production systems"],
+            ["Cloud Migration Strategy", "Move SQL Server workloads to AWS & Azure safely"],
+            ["Resilience & Continuity", "Strengthen backup, recovery, and failover readiness"]
+          ].map(([title, desc]) => (
+            <div key={title} className="rounded-xl border border-cyan-300/20 bg-cyan-400/10 p-4">
+              <div className="text-sm font-semibold text-white">{title}</div>
+              <div className="mt-1 text-sm text-slate-300">{desc}</div>
+            </div>
+          ))}
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
 
         <section id="about" className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
