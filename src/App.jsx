@@ -552,14 +552,37 @@ export default function SQLITTechSolutionsWebsite() {
             </div>
 
             <div className="mt-8 grid gap-4">
-              {githubProjects.map((project) => (
+              {[
+                {
+                  title: "When to move on-prem SQL Server to PostgreSQL on AWS",
+                  outcome: "Modernization decision framework for cost reduction, portability, and cloud-ready architecture.",
+                  href: "https://github.com/lachungo/",
+                  image: "/aws-migration.png",
+                },
+                {
+                  title: "Always On High Availability in Oracle VirtualBox (Home Lab)",
+                  outcome: "Hands-on HA architecture lab demonstrating failover design, replication, and operational resiliency.",
+                  href: "https://github.com/lachungo/",
+                  image: "/virtualbox-lab.png",
+                },
+                {
+                  title: "SQL Server Always On Database Refresh Architecture",
+                  outcome: "Enterprise-style refresh and reseeding architecture for controlled data movement in HA environments.",
+                  href: "https://github.com/lachungo/",
+                  image: "/alwayson-refresh.png",
+                },
+              ].map((project) => (
                 <div
                   key={project.title}
                   className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-white/8 to-white/[0.03]"
                 >
                   <button
                     type="button"
-                    onClick={() => window.open(project.image, "_blank")}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      window.open(project.image, "_blank", "noopener,noreferrer");
+                    }}
                     className="group block h-52 w-full overflow-hidden text-left"
                   >
                     <img
