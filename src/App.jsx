@@ -289,7 +289,7 @@ export default function SQLITTechSolutionsWebsite() {
                 {metrics.map(([value, label]) => (
                   <div
                     key={value}
-                    className="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-xl backdrop-blur-sm"
+                    className="rounded-3xl border border-cyan-400/20 bg-cyan-400/10 p-5 shadow-xl backdrop-blur-sm"
                   >
                     <div className="text-3xl font-semibold text-white">{value}</div>
                     <div className="mt-2 text-sm leading-6 text-slate-400">{label}</div>
@@ -299,7 +299,7 @@ export default function SQLITTechSolutionsWebsite() {
             </div>
 
             <div className="relative">
-              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur-xl sm:p-5">
+              <div className="rounded-[2rem] border border-cyan-400/20 bg-cyan-400/10 p-4 shadow-2xl backdrop-blur-xl sm:p-5">
                 <div className="rounded-[1.75rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 via-cyan-400/10 to-emerald-400/10 p-5 sm:p-6">
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div>
@@ -359,7 +359,7 @@ export default function SQLITTechSolutionsWebsite() {
 
         <section id="about" className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-sm sm:p-8">
+            <div className="rounded-[2rem] border border-cyan-400/20 bg-cyan-400/10 p-6 shadow-2xl backdrop-blur-sm sm:p-8">
               <h2 className="text-3xl font-bold text-white">About Louis Achungo</h2>
               <p className="mt-4 leading-7 text-slate-300">
                 Louis Achungo is a senior SQL Server Database Administrator and database infrastructure specialist
@@ -403,7 +403,7 @@ export default function SQLITTechSolutionsWebsite() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="group rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-xl backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/[0.07]"
+                className="group rounded-[2rem] border border-cyan-400/20 bg-cyan-400/10 p-6 shadow-xl backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/[0.07]"
               >
                 <h3 className="text-xl font-semibold text-white">{service.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-300">{service.desc}</p>
@@ -423,7 +423,7 @@ export default function SQLITTechSolutionsWebsite() {
             {caseStudies.map((study) => (
               <div
                 key={study.title}
-                className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-sm"
+                className="rounded-[2rem] border border-cyan-400/20 bg-cyan-400/10 p-6 shadow-2xl backdrop-blur-sm"
               >
                 <h3 className="text-2xl font-semibold text-white">{study.title}</h3>
                 <div className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
@@ -459,7 +459,7 @@ export default function SQLITTechSolutionsWebsite() {
                 Selected representative engagements reflecting work delivered as a contracted database specialist.
               </p>
             </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-xs text-slate-400">
+            <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-3 text-xs text-slate-400">
               Company names are shown to describe professional experience only.
             </div>
           </div>
@@ -467,7 +467,7 @@ export default function SQLITTechSolutionsWebsite() {
             {testimonials.map((item) => (
               <div
                 key={item.company}
-                className="rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 shadow-2xl backdrop-blur-sm"
+                className="rounded-[2rem] border border-white/10 bg-cyan-400/10 p-6 shadow-2xl backdrop-blur-sm"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div>
@@ -498,7 +498,7 @@ export default function SQLITTechSolutionsWebsite() {
           id="github"
           className="relative mx-auto grid max-w-7xl gap-6 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-2"
         >
-          <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-sm sm:p-8">
+          <div className="rounded-[2rem] border border-cyan-400/20 bg-cyan-400/10 p-6 shadow-2xl backdrop-blur-sm sm:p-8">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <h2 className="text-3xl font-bold text-white">GitHub Technical Portfolio</h2>
@@ -520,7 +520,7 @@ export default function SQLITTechSolutionsWebsite() {
               {githubProjects.map((project) => (
                 <div
                   key={project.title}
-                  className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-white/8 to-white/[0.03] shadow-xl"
+                  className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 to-emerald-400/10 shadow-xl"
                 >
                   <button
                     type="button"
@@ -606,12 +606,12 @@ export default function SQLITTechSolutionsWebsite() {
             {featuredProjects.map((project) => (
               <div
                 key={project.title}
-                className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/8 to-white/[0.03] p-6 shadow-2xl backdrop-blur-sm"
+                className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 to-emerald-400/10 p-6 shadow-2xl backdrop-blur-sm"
               >
                 <div className="text-sm font-medium text-cyan-300">{project.category}</div>
                 <h3 className="mt-3 text-2xl font-semibold text-white">{project.title}</h3>
                 <p className="mt-4 leading-7 text-slate-300">{project.desc}</p>
-                <div className="mt-6 inline-flex rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.25em] text-slate-400">
+                <div className="mt-6 inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs uppercase tracking-[0.25em] text-slate-400">
                   Portfolio-ready
                 </div>
               </div>
@@ -621,7 +621,7 @@ export default function SQLITTechSolutionsWebsite() {
 
         <section id="contact" className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-sm sm:p-8">
+            <div className="rounded-[2rem] border border-cyan-400/20 bg-cyan-400/10 p-6 shadow-2xl backdrop-blur-sm sm:p-8">
               <h2 className="text-3xl font-bold text-white">Let’s talk</h2>
               <p className="mt-4 leading-7 text-slate-300">
                 For consulting inquiries, migration work, SQL Server performance tuning, HA/DR reviews, or cloud database modernization, reach out directly using the contact details below.
