@@ -245,7 +245,7 @@ export default function SQLITTechSolutionsWebsite() {
 
       {/* HEADLINE */}
       <h1 className="max-w-3xl text-4xl font-semibold leading-[1.02] tracking-tight text-white sm:text-5xl md:text-6xl xl:text-[3.6rem]">
-        Enterprise SQL Architecture. Simplified.
+        Enterprise SQL Databases Environment Architecture. Simplified.
       </h1>
 
       {/* SUBTEXT */}
