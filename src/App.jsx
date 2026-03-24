@@ -196,9 +196,9 @@ export default function SQLITTechSolutionsWebsite() {
           <img
             src="/cloud-bg.png"
             alt="Cloud background"
-            className="absolute inset-0 h-full w-full object-cover opacity-35"
+            className="absolute inset-0 h-full w-full object-cover object-center opacity-55"
           />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.18),transparent_30%),linear-gradient(135deg,rgba(3,7,18,0.96),rgba(6,11,20,0.88),rgba(2,6,23,0.98))]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.12),transparent_30%),linear-gradient(135deg,rgba(3,7,18,0.82),rgba(6,11,20,0.72),rgba(2,6,23,0.86))]" />
           <div className="absolute left-0 top-0 h-[26rem] w-[26rem] rounded-full bg-cyan-400/12 blur-3xl sm:h-[34rem] sm:w-[34rem]" />
           <div className="absolute right-0 top-24 h-[24rem] w-[24rem] rounded-full bg-blue-500/10 blur-3xl sm:h-[32rem] sm:w-[32rem]" />
           <div className="absolute bottom-0 left-1/3 h-[20rem] w-[20rem] rounded-full bg-indigo-500/10 blur-3xl sm:h-[26rem] sm:w-[26rem]" />
@@ -242,7 +242,7 @@ export default function SQLITTechSolutionsWebsite() {
           </svg>
         </div>
 
-        <section className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-24">
+        <section className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-20">
           <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
             <div className="relative">
               <div className="mb-5 inline-flex w-fit max-w-full rounded-full border border-cyan-300/20 bg-white/5 px-4 py-2 text-xs font-medium text-cyan-200 shadow-lg shadow-cyan-900/10 backdrop-blur sm:text-sm">
@@ -251,7 +251,7 @@ export default function SQLITTechSolutionsWebsite() {
                 </span>
               </div>
 
-              <h1 className="max-w-5xl text-5xl font-semibold leading-[0.95] tracking-tight text-white sm:text-6xl md:text-7xl xl:text-[5.5rem]">
+              <h1 className="max-w-4xl text-4xl font-semibold leading-[1.0] tracking-tight text-white sm:text-5xl md:text-6xl xl:text-[4.5rem]">
                 Enterprise SQL Databases. Simplified.
               </h1>
 
