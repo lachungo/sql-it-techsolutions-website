@@ -118,16 +118,19 @@ export default function SQLITTechSolutionsWebsite() {
       title: "When to move on-prem SQL Server to PostgreSQL on AWS",
       outcome: "Modernization decision framework for cost reduction, portability, and cloud-ready architecture.",
       href: "https://github.com/lachungo/",
+      image: "/aws-migration.png",
     },
     {
       title: "Always On High Availability in Oracle VirtualBox (Home Lab)",
       outcome: "Hands-on HA architecture lab demonstrating failover design, replication, and operational resiliency.",
       href: "https://github.com/lachungo/",
+      image: "/virtualbox-lab.png",
     },
     {
       title: "SQL Server Always On Database Refresh Architecture",
       outcome: "Enterprise-style refresh and reseeding architecture for controlled data movement in HA environments.",
       href: "https://github.com/lachungo/",
+      image: "/alwayson-refresh.png",
     },
   ];
 
@@ -151,8 +154,8 @@ export default function SQLITTechSolutionsWebsite() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#07111f] text-slate-100 selection:bg-cyan-300/30 selection:text-white">
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#07111f]/80 backdrop-blur-xl">
+    <div className="min-h-screen bg-[#050b14] text-slate-100 selection:bg-cyan-300/30 selection:text-white">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#07111f]/75 backdrop-blur-2xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
           <div className="flex min-w-0 items-center gap-3 sm:gap-4">
             <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-300 via-sky-400 to-blue-500 text-sm font-bold text-slate-950 shadow-lg shadow-cyan-500/20 sm:h-12 sm:w-12">
@@ -170,7 +173,7 @@ export default function SQLITTechSolutionsWebsite() {
 
           <nav className="hidden gap-6 text-sm text-slate-300 lg:flex">
             {navItems.map(([href, label]) => (
-              <a key={href} href={href} className="hover:text-white">
+              <a key={href} href={href} className="transition hover:text-white">
                 {label}
               </a>
             ))}
@@ -190,12 +193,18 @@ export default function SQLITTechSolutionsWebsite() {
 
       <main className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <div className="absolute left-0 top-0 h-[24rem] w-[24rem] rounded-full bg-cyan-400/10 blur-3xl sm:h-[32rem] sm:w-[32rem]" />
-          <div className="absolute right-0 top-40 h-[22rem] w-[22rem] rounded-full bg-blue-500/10 blur-3xl sm:h-[30rem] sm:w-[30rem]" />
+          <img
+            src="/cloud-bg.png"
+            alt="Cloud background"
+            className="absolute inset-0 h-full w-full object-cover opacity-35"
+          />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.18),transparent_30%),linear-gradient(135deg,rgba(3,7,18,0.96),rgba(6,11,20,0.88),rgba(2,6,23,0.98))]" />
+          <div className="absolute left-0 top-0 h-[26rem] w-[26rem] rounded-full bg-cyan-400/12 blur-3xl sm:h-[34rem] sm:w-[34rem]" />
+          <div className="absolute right-0 top-24 h-[24rem] w-[24rem] rounded-full bg-blue-500/10 blur-3xl sm:h-[32rem] sm:w-[32rem]" />
           <div className="absolute bottom-0 left-1/3 h-[20rem] w-[20rem] rounded-full bg-indigo-500/10 blur-3xl sm:h-[26rem] sm:w-[26rem]" />
 
           <svg
-            className="absolute inset-0 h-full w-full opacity-[0.10]"
+            className="absolute inset-0 h-full w-full opacity-[0.07]"
             viewBox="0 0 1600 900"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -224,39 +233,6 @@ export default function SQLITTechSolutionsWebsite() {
               <path d="M560 480V660" />
               <path d="M960 480V660" />
             </g>
-
-            <g fill="rgba(103,232,249,0.18)" stroke="rgba(103,232,249,0.45)" strokeWidth="1.5">
-              <rect x="120" y="130" rx="18" ry="18" width="200" height="96" />
-              <rect x="420" y="130" rx="18" ry="18" width="200" height="96" />
-              <rect x="720" y="130" rx="18" ry="18" width="220" height="96" />
-              <rect x="1040" y="130" rx="18" ry="18" width="240" height="96" />
-              <rect x="180" y="252" rx="18" ry="18" width="220" height="96" />
-              <rect x="500" y="252" rx="18" ry="18" width="220" height="96" />
-              <rect x="840" y="252" rx="18" ry="18" width="220" height="96" />
-              <rect x="1180" y="252" rx="18" ry="18" width="220" height="96" />
-              <rect x="260" y="432" rx="18" ry="18" width="240" height="96" />
-              <rect x="600" y="432" rx="18" ry="18" width="240" height="96" />
-              <rect x="940" y="432" rx="18" ry="18" width="240" height="96" />
-              <rect x="420" y="612" rx="18" ry="18" width="260" height="96" />
-              <rect x="840" y="612" rx="18" ry="18" width="280" height="96" />
-            </g>
-
-            <g fill="rgba(255,255,255,0.55)" fontSize="22" fontFamily="Arial, sans-serif" letterSpacing="2">
-              <text x="160" y="186">VPC / VNET</text>
-              <text x="456" y="186">APP TIER</text>
-              <text x="774" y="186">SQL SERVER</text>
-              <text x="1096" y="186">OBSERVABILITY</text>
-              <text x="230" y="308">LOAD BALANCER</text>
-              <text x="552" y="308">AG LISTENER</text>
-              <text x="894" y="308">PRIMARY DB</text>
-              <text x="1230" y="308">SECONDARY DB</text>
-              <text x="318" y="488">BACKUPS</text>
-              <text x="656" y="488">DR SITE</text>
-              <text x="994" y="488">REPORTING</text>
-              <text x="494" y="668">AUTOMATION</text>
-              <text x="926" y="668">AWS / AZURE</text>
-            </g>
-
             <defs>
               <linearGradient id="gridGlow" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
                 <stop stopColor="rgba(34,211,238,0.4)" />
@@ -267,7 +243,7 @@ export default function SQLITTechSolutionsWebsite() {
         </div>
 
         <section className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-24">
-          <div className="grid items-center gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:gap-10">
+          <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
             <div className="relative">
               <div className="mb-5 inline-flex w-fit max-w-full rounded-full border border-cyan-300/20 bg-white/5 px-4 py-2 text-xs font-medium text-cyan-200 shadow-lg shadow-cyan-900/10 backdrop-blur sm:text-sm">
                 <span className="truncate">
@@ -275,14 +251,13 @@ export default function SQLITTechSolutionsWebsite() {
                 </span>
               </div>
 
-              <h1 className="max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl md:text-7xl">
+              <h1 className="max-w-5xl text-5xl font-semibold leading-[0.95] tracking-tight text-white sm:text-6xl md:text-7xl xl:text-[5.5rem]">
                 Enterprise SQL Databases. Simplified.
               </h1>
 
               <p className="mt-6 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg md:text-xl md:leading-8">
-                SQL-IT-Tech Solutions helps financial, healthcare, and enterprise teams improve performance,
-                strengthen resilience, and modernize database platforms across SQL Server, AWS, and Azure.
-                The focus is high-value delivery: lower risk, better uptime, faster systems, and executive-ready outcomes.
+                High-performance SQL Server architecture, cloud modernization, resilience engineering,
+                and production-grade delivery for enterprise platforms that cannot afford downtime.
               </p>
 
               <div className="mt-4">
@@ -290,7 +265,7 @@ export default function SQLITTechSolutionsWebsite() {
                   href="https://www.linkedin.com/in/louis-achungo/"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-cyan-300 hover:text-cyan-200"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-cyan-300 transition hover:text-cyan-200"
                 >
                   View LinkedIn Profile
                 </a>
@@ -311,16 +286,16 @@ export default function SQLITTechSolutionsWebsite() {
                 </a>
               </div>
 
-              <div className="mt-8 rounded-2xl border border-cyan-300/20 bg-cyan-400/10 p-4 text-sm text-cyan-100">
+              <div className="mt-8 rounded-3xl border border-cyan-300/20 bg-white/5 p-5 shadow-2xl backdrop-blur-xl">
                 <div className="grid gap-2 sm:grid-cols-2">
-                  <div>✔ Reduced blocking by up to 70% in production systems</div>
-                  <div>✔ Cut query latency by ~50% across enterprise workloads</div>
-                  <div>✔ Restored sub-second response times under peak load</div>
-                  <div>✔ Validated HA/DR recovery against defined RTO targets</div>
+                  <div className="rounded-2xl border border-white/10 bg-cyan-400/10 px-4 py-3 text-sm text-cyan-100">✔ Reduced blocking by up to 70% in production systems</div>
+                  <div className="rounded-2xl border border-white/10 bg-cyan-400/10 px-4 py-3 text-sm text-cyan-100">✔ Cut query latency by ~50% across enterprise workloads</div>
+                  <div className="rounded-2xl border border-white/10 bg-cyan-400/10 px-4 py-3 text-sm text-cyan-100">✔ Restored sub-second response times under peak load</div>
+                  <div className="rounded-2xl border border-white/10 bg-cyan-400/10 px-4 py-3 text-sm text-cyan-100">✔ Validated HA/DR recovery against defined RTO targets</div>
                 </div>
               </div>
 
-              <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 md:grid-cols-3">
+              <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
                 {metrics.map(([value, label]) => (
                   <div
                     key={value}
@@ -335,7 +310,7 @@ export default function SQLITTechSolutionsWebsite() {
 
             <div className="relative">
               <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur-xl sm:p-5">
-                <div className="rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-5 sm:p-6">
+                <div className="rounded-[1.75rem] border border-white/10 bg-gradient-to-br from-slate-900/95 via-slate-900/95 to-slate-800/95 p-5 sm:p-6">
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div>
                       <div className="text-xs uppercase tracking-[0.3em] text-cyan-300">
@@ -552,38 +527,15 @@ export default function SQLITTechSolutionsWebsite() {
             </div>
 
             <div className="mt-8 grid gap-4">
-              {[
-                {
-                  title: "When to move on-prem SQL Server to PostgreSQL on AWS",
-                  outcome: "Modernization decision framework for cost reduction, portability, and cloud-ready architecture.",
-                  href: "https://github.com/lachungo/",
-                  image: "/aws-migration.png",
-                },
-                {
-                  title: "Always On High Availability in Oracle VirtualBox (Home Lab)",
-                  outcome: "Hands-on HA architecture lab demonstrating failover design, replication, and operational resiliency.",
-                  href: "https://github.com/lachungo/",
-                  image: "/virtualbox-lab.png",
-                },
-                {
-                  title: "SQL Server Always On Database Refresh Architecture",
-                  outcome: "Enterprise-style refresh and reseeding architecture for controlled data movement in HA environments.",
-                  href: "https://github.com/lachungo/",
-                  image: "/alwayson-refresh.png",
-                },
-              ].map((project) => (
+              {githubProjects.map((project) => (
                 <div
                   key={project.title}
-                  className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-white/8 to-white/[0.03]"
+                  className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-white/8 to-white/[0.03] shadow-xl"
                 >
                   <button
                     type="button"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      window.open(project.image, "_blank", "noopener,noreferrer");
-                    }}
-                    className="group block h-52 w-full overflow-hidden text-left"
+                    onClick={() => window.open(project.image, "_blank", "noopener,noreferrer")}
+                    className="group block h-56 w-full overflow-hidden text-left"
                   >
                     <img
                       src={project.image}
