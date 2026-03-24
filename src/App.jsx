@@ -1,150 +1,222 @@
-export default function App() {
+export default function SQLITTechSolutionsWebsite() {
   const testimonials = [
     {
-      company: 'Huntington Bank',
-      role: 'Senior SQL Server DBA (Contract)',
-      text: 'Delivered reliable SQL Server operations in a high-availability banking environment, with proactive performance tuning and strong incident response support.',
-      focus: ['SQL Server Performance', 'HA/DR Support', 'Operational Stability'],
+      company: "Huntington Bank",
+      role: "Senior SQL Server DBA (Contract)",
+      text: "Delivered reliable SQL Server operations in a high-availability banking environment, with proactive performance tuning and strong incident response support.",
+      focus: ["SQL Server Performance", "HA/DR Support", "Operational Stability"],
     },
     {
-      company: 'Intel Corporation',
-      role: 'Database Infrastructure Consultant (Contract)',
-      text: 'Brought deep technical expertise to complex database environments through structured troubleshooting, documentation, and long-term operational improvements.',
-      focus: ['Database Architecture', 'Performance Analysis', 'Documentation'],
+      company: "Intel Corporation",
+      role: "Database Infrastructure Consultant (Contract)",
+      text: "Brought deep technical expertise to complex database environments through structured troubleshooting, documentation, and long-term operational improvements.",
+      focus: ["Database Architecture", "Performance Analysis", "Documentation"],
     },
     {
-      company: 'CO-OP Financial Services',
-      role: 'SQL Server Database Administrator (Contract)',
-      text: 'Supported mission-critical database platforms with attention to security, data integrity, and availability in financial-services environments.',
-      focus: ['Mission-Critical SQL', 'Compliance', 'Data Integrity'],
+      company: "CO-OP Financial Services",
+      role: "SQL Server Database Administrator (Contract)",
+      text: "Supported mission-critical database platforms with attention to security, data integrity, and availability in financial-services environments.",
+      focus: ["Mission-Critical SQL", "Compliance", "Data Integrity"],
     },
     {
-      company: 'LucidHealth',
-      role: 'Senior Database Consultant (Contract)',
-      text: 'Provided dependable database support for healthcare systems where uptime and reporting accuracy were essential.',
-      focus: ['Healthcare Data Systems', 'Reliability', 'Performance Tuning'],
+      company: "LucidHealth",
+      role: "Senior Database Consultant (Contract)",
+      text: "Provided dependable database support for healthcare systems where uptime and reporting accuracy were essential.",
+      focus: ["Healthcare Data Systems", "Reliability", "Performance Tuning"],
     },
     {
-      company: 'Park National Bank',
-      role: 'Lead SQL Server DBA (Contract)',
-      text: 'Led SQL Server operational support with performance optimization, backup strategy improvements, and HA/DR readiness work that reduced risk and improved resilience.',
-      focus: ['Lead DBA Support', 'Backup Strategy', 'Database Resilience'],
+      company: "Park National Bank",
+      role: "Lead SQL Server DBA (Contract)",
+      text: "Led SQL Server operational support with performance optimization, backup strategy improvements, and HA/DR readiness work that reduced risk and improved resilience.",
+      focus: ["Lead DBA Support", "Backup Strategy", "Database Resilience"],
     },
-  ]
+  ];
 
   const services = [
     {
-      title: 'SQL Server Administration',
-      desc: 'Production support, patching, backup and recovery, security hardening, and day-to-day operational stability.',
+      title: "SQL Server Administration",
+      desc: "Production support, patching, backup and recovery, security hardening, and day-to-day operational stability.",
     },
     {
-      title: 'Performance Tuning',
-      desc: 'Query tuning, indexing strategy, blocking analysis, concurrency troubleshooting, and high-load workload stabilization.',
+      title: "Performance Tuning",
+      desc: "Query tuning, indexing strategy, blocking analysis, concurrency troubleshooting, and high-load workload stabilization.",
     },
     {
-      title: 'Cloud Migration',
-      desc: 'SQL Server migrations to AWS RDS, Aurora PostgreSQL, and Azure SQL with validation, rollback planning, and documentation.',
+      title: "Cloud Migration",
+      desc: "SQL Server migrations to AWS RDS, Aurora PostgreSQL, and Azure SQL with validation, rollback planning, and documentation.",
     },
     {
-      title: 'HA / DR Readiness',
-      desc: 'Always On, clustering, failover planning, restore testing, RTO/RPO analysis, and business continuity reviews.',
+      title: "HA / DR Readiness",
+      desc: "Always On, clustering, failover planning, restore testing, RTO/RPO analysis, and business continuity reviews.",
     },
-  ]
-
-  const demos = [
-    {
-      title: 'SQL Server to AWS RDS via S3',
-      desc: 'A short migration walkthrough showing backup workflow, S3 staging, restore orchestration, and validation.',
-    },
-    {
-      title: 'CDC / Replication Cutover Demo',
-      desc: 'A concise technical video showing near-real-time migration patterns and low-downtime validation steps.',
-    },
-    {
-      title: 'AWS CLI Automation for DB Migration',
-      desc: 'A script-driven demo covering AWS CLI setup, migration support commands, and repeatable deployment flow.',
-    },
-  ]
+  ];
 
   const featuredProjects = [
     {
-      title: 'SQL Server to AWS RDS Migration Lab',
-      category: 'Cloud modernization',
-      desc: 'A portfolio-ready migration walkthrough covering assessment, backup strategy, restore flow, validation, and post-migration hardening.',
+      title: "SQL Server to AWS RDS Migration Lab",
+      category: "Cloud modernization",
+      desc: "A portfolio-ready migration walkthrough covering assessment, backup strategy, restore flow, validation, and post-migration hardening.",
     },
     {
-      title: 'Enterprise SQL Performance Triage',
-      category: 'Performance engineering',
-      desc: 'A structured methodology for resolving blocking, concurrency issues, and high-load database bottlenecks in production systems.',
+      title: "Enterprise SQL Performance Triage",
+      category: "Performance engineering",
+      desc: "A structured methodology for resolving blocking, concurrency issues, and high-load database bottlenecks in production systems.",
     },
     {
-      title: 'HA/DR Readiness Architecture Review',
-      category: 'Resilience planning',
-      desc: 'A consulting engagement model focused on backup integrity, failover readiness, RTO/RPO alignment, and operational runbooks.',
+      title: "HA/DR Readiness Architecture Review",
+      category: "Resilience planning",
+      desc: "A consulting engagement model focused on backup integrity, failover readiness, RTO/RPO alignment, and operational runbooks.",
     },
-  ]
+  ];
+
+  const caseStudies = [
+    {
+      title: "High-Transaction Blocking & Concurrency Recovery",
+      challenge:
+        "Production databases under sustained heavy load experienced blocking chains, slow response times, and unstable transaction throughput.",
+      solution:
+        "Performed wait-stat analysis, reviewed execution plans, tuned indexing strategy, and optimized query patterns to reduce contention and improve concurrency.",
+      outcome:
+        "Reduced blocking duration by up to 70%, improved transaction throughput, and restored sub-second response times for critical application queries under peak load.",
+    },
+    {
+      title: "SQL Server Performance Triage for Business-Critical Systems",
+      challenge:
+        "Teams needed rapid diagnosis of slow queries, resource bottlenecks, and inconsistent performance across production workloads.",
+      solution:
+        "Used a structured assessment approach covering Query Store, wait stats, memory pressure, tempdb behavior, storage latency, and plan regression patterns.",
+      outcome:
+        "Identified top 10 high-cost queries, reduced average query duration by ~50%, and established monitoring baselines using Query Store and wait-stat tracking.",
+    },
+    {
+      title: "Backup, Restore, and HA/DR Validation Improvements",
+      challenge:
+        "Database environments had backup jobs in place but lacked full confidence in restore readiness, failover preparedness, and documented recovery procedures.",
+      solution:
+        "Reviewed backup architecture, validated restore workflows, tested recovery scenarios, and documented RTO/RPO-aligned operating procedures.",
+      outcome:
+        "Validated restore times against defined RTO targets, confirmed backup integrity, and documented recovery procedures enabling full environment recovery testing within target recovery windows.",
+    },
+  ];
 
   const metrics = [
-    ['24+', 'Years of SQL Server experience'],
-    ['Enterprise', 'Banking, healthcare, and technology environments'],
-    ['AWS + Azure', 'Modernization and migration capability'],
-  ]
+    ["24+", "Years of SQL Server experience"],
+    ["Enterprise", "Banking, healthcare, and technology environments"],
+    ["AWS + Azure", "Modernization and migration capability"],
+  ];
+
+  const navItems = [
+    ["#services", "Services"],
+    ["#case-studies", "Case Studies"],
+    ["#testimonials", "Client Experience"],
+    ["#github", "GitHub"],
+    ["#contact", "Contact"],
+  ];
+
+  const githubProjects = [
+    "When to move on-prem SQL Server to PostgreSQL on AWS",
+    "Always On High Availability in Oracle VirtualBox (Home Lab)",
+    "SQL Server Always On Database Refresh Architecture",
+  ];
 
   return (
     <div className="min-h-screen bg-[#07111f] text-slate-100 selection:bg-cyan-300/30 selection:text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#07111f]/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-300 via-sky-400 to-blue-500 text-sm font-bold text-slate-950 shadow-lg shadow-cyan-500/20">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
+          <div className="flex min-w-0 items-center gap-3 sm:gap-4">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-300 via-sky-400 to-blue-500 text-sm font-bold text-slate-950 shadow-lg shadow-cyan-500/20 sm:h-12 sm:w-12">
               SQL
             </div>
-            <div>
-              <div className="text-xl font-bold tracking-tight text-white">SQL-IT-Tech Solutions LLC</div>
-              <div className="text-sm text-slate-400">Atlanta, GA • Senior SQL Server Consulting • Cloud Modernization</div>
+            <div className="min-w-0">
+              <div className="truncate text-lg font-bold tracking-tight text-white sm:text-xl">
+                SQL-IT-Tech Solutions LLC
+              </div>
+              <div className="truncate text-xs text-slate-400 sm:text-sm">
+                Atlanta, GA • Senior SQL Server Consulting • Cloud Modernization
+              </div>
             </div>
           </div>
-          <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
-            <a href="#services" className="hover:text-white">Services</a>
-            <a href="#testimonials" className="hover:text-white">Client Experience</a>
-            <a href="#github" className="hover:text-white">GitHub</a>
-            <a href="#videos" className="hover:text-white">Video Demos</a>
-            <a href="#contact" className="hover:text-white">Contact</a>
+
+          <nav className="hidden gap-6 text-sm text-slate-300 lg:flex">
+            {navItems.map(([href, label]) => (
+              <a key={href} href={href} className="hover:text-white">
+                {label}
+              </a>
+            ))}
           </nav>
+        </div>
+
+        <div className="border-t border-white/10 lg:hidden">
+          <div className="mx-auto flex max-w-7xl gap-4 overflow-x-auto px-4 py-3 text-sm text-slate-300 sm:px-6 [&::-webkit-scrollbar]:hidden">
+            {navItems.map(([href, label]) => (
+              <a
+                key={href}
+                href={href}
+                className="whitespace-nowrap hover:text-white"
+              >
+                {label}
+              </a>
+            ))}
+          </div>
         </div>
       </header>
 
       <main className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0">
-          <div className="absolute left-0 top-0 h-[32rem] w-[32rem] rounded-full bg-cyan-400/10 blur-3xl" />
-          <div className="absolute right-0 top-40 h-[30rem] w-[30rem] rounded-full bg-blue-500/10 blur-3xl" />
-          <div className="absolute bottom-0 left-1/3 h-[26rem] w-[26rem] rounded-full bg-indigo-500/10 blur-3xl" />
+          <div className="absolute left-0 top-0 h-[24rem] w-[24rem] rounded-full bg-cyan-400/10 blur-3xl sm:h-[32rem] sm:w-[32rem]" />
+          <div className="absolute right-0 top-40 h-[22rem] w-[22rem] rounded-full bg-blue-500/10 blur-3xl sm:h-[30rem] sm:w-[30rem]" />
+          <div className="absolute bottom-0 left-1/3 h-[20rem] w-[20rem] rounded-full bg-indigo-500/10 blur-3xl sm:h-[26rem] sm:w-[26rem]" />
         </div>
 
-        <section className="relative mx-auto max-w-7xl px-6 py-16 md:py-24">
-          <div className="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+        <section className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-24">
+          <div className="grid items-center gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:gap-10">
             <div className="relative">
-              <div className="mb-5 inline-flex w-fit rounded-full border border-cyan-300/20 bg-white/5 px-4 py-2 text-sm font-medium text-cyan-200 shadow-lg shadow-cyan-900/10 backdrop-blur">
-                Trusted SQL Server consulting for banking, healthcare, and enterprise data platforms
+              <div className="mb-5 inline-flex w-fit max-w-full rounded-full border border-cyan-300/20 bg-white/5 px-4 py-2 text-xs font-medium text-cyan-200 shadow-lg shadow-cyan-900/10 backdrop-blur sm:text-sm">
+                <span className="truncate">
+                  Trusted SQL Server consulting for banking, healthcare, and enterprise data platforms
+                </span>
               </div>
-              <h1 className="max-w-4xl text-5xl font-semibold leading-tight tracking-tight text-white md:text-7xl">
+
+              <h1 className="max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl md:text-7xl">
                 Premium database consulting for mission-critical SQL Server environments.
               </h1>
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300 md:text-xl">
+
+              <p className="mt-6 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg md:text-xl md:leading-8">
                 SQL-IT-Tech Solutions helps financial, healthcare, and enterprise teams improve performance,
                 strengthen resilience, and modernize database platforms across SQL Server, AWS, and Azure.
                 The focus is high-value delivery: lower risk, better uptime, faster systems, and executive-ready outcomes.
               </p>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a href="#contact" className="rounded-2xl bg-white px-6 py-3.5 font-semibold text-slate-950 shadow-2xl transition hover:-translate-y-0.5">
+
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <a
+                  href="#contact"
+                  className="rounded-2xl bg-white px-6 py-3.5 text-center font-semibold text-slate-950 shadow-2xl transition hover:-translate-y-0.5"
+                >
                   Book a Consultation
                 </a>
-                <a href="#featured-projects" className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3.5 font-semibold text-white backdrop-blur transition hover:bg-white/10">
+                <a
+                  href="#featured-projects"
+                  className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3.5 text-center font-semibold text-white backdrop-blur transition hover:bg-white/10"
+                >
                   View Featured Work
                 </a>
               </div>
-              <div className="mt-12 grid gap-4 md:grid-cols-3">
+
+              <div className="mt-8 rounded-2xl border border-cyan-300/20 bg-cyan-400/10 p-4 text-sm text-cyan-100">
+                <div className="grid gap-2 sm:grid-cols-2">
+                  <div>✔ Reduced blocking by up to 70% in production systems</div>
+                  <div>✔ Cut query latency by ~50% across enterprise workloads</div>
+                  <div>✔ Restored sub-second response times under peak load</div>
+                  <div>✔ Validated HA/DR recovery against defined RTO targets</div>
+                </div>
+              </div>
+
+              <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 md:grid-cols-3">
                 {metrics.map(([value, label]) => (
-                  <div key={value} className="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-xl backdrop-blur-sm">
+                  <div
+                    key={value}
+                    className="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-xl backdrop-blur-sm"
+                  >
                     <div className="text-3xl font-semibold text-white">{value}</div>
                     <div className="mt-2 text-sm leading-6 text-slate-400">{label}</div>
                   </div>
@@ -153,31 +225,51 @@ export default function App() {
             </div>
 
             <div className="relative">
-              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-5 shadow-2xl backdrop-blur-xl">
-                <div className="rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-6">
-                  <div className="flex items-center justify-between">
+              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur-xl sm:p-5">
+                <div className="rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-5 sm:p-6">
+                  <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div>
-                      <div className="text-xs uppercase tracking-[0.3em] text-cyan-300">Advisory focus</div>
-                      <div className="mt-2 text-2xl font-semibold text-white">Enterprise SQL Leadership</div>
+                      <div className="text-xs uppercase tracking-[0.3em] text-cyan-300">
+                        Advisory Focus
+                      </div>
+                      <div className="mt-2 text-2xl font-semibold text-white">
+                        Enterprise SQL Leadership
+                      </div>
                     </div>
-                    <div className="rounded-2xl border border-cyan-300/20 bg-cyan-300/10 px-3 py-2 text-xs text-cyan-100">
+                    <div className="w-fit rounded-2xl border border-cyan-300/20 bg-cyan-300/10 px-3 py-2 text-xs text-cyan-100">
                       Atlanta, GA
                     </div>
                   </div>
+
                   <div className="mt-6 space-y-4">
                     {[
-                      ['Performance Engineering', 'Reduce blocking, tune workloads, and stabilize high-transaction systems.'],
-                      ['Cloud Migration Strategy', 'Move SQL Server workloads to AWS and Azure with clean validation paths.'],
-                      ['Resilience & Continuity', 'Strengthen backup, recovery, failover, and operational readiness.'],
+                      [
+                        "Performance Engineering",
+                        "Reduce blocking, tune workloads, and stabilize high-transaction systems.",
+                      ],
+                      [
+                        "Cloud Migration Strategy",
+                        "Move SQL Server workloads to AWS and Azure with clean validation paths.",
+                      ],
+                      [
+                        "Resilience & Continuity",
+                        "Strengthen backup, recovery, failover, and operational readiness.",
+                      ],
                     ].map(([title, desc]) => (
-                      <div key={title} className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                      <div
+                        key={title}
+                        className="rounded-2xl border border-white/10 bg-white/5 p-4"
+                      >
                         <div className="text-sm font-semibold text-white">{title}</div>
                         <div className="mt-1 text-sm leading-6 text-slate-400">{desc}</div>
                       </div>
                     ))}
                   </div>
+
                   <div className="mt-6 rounded-2xl border border-white/10 bg-slate-950/60 p-4">
-                    <div className="text-xs uppercase tracking-[0.25em] text-slate-500">Best fit clients</div>
+                    <div className="text-xs uppercase tracking-[0.25em] text-slate-500">
+                      Best Fit Clients
+                    </div>
                     <div className="mt-3 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
                       <div className="rounded-xl bg-white/5 p-3">Banks and financial services firms</div>
                       <div className="rounded-xl bg-white/5 p-3">Healthcare and clinical data platforms</div>
@@ -191,9 +283,9 @@ export default function App() {
           </div>
         </section>
 
-        <section id="about" className="relative mx-auto max-w-7xl px-6 py-16">
+        <section id="about" className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-sm">
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-sm sm:p-8">
               <h2 className="text-3xl font-bold text-white">About Louis Achungo</h2>
               <p className="mt-4 leading-7 text-slate-300">
                 Louis Achungo is a senior SQL Server Database Administrator and database infrastructure specialist
@@ -213,8 +305,8 @@ export default function App() {
               </p>
             </div>
 
-            <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-8 shadow-2xl">
-              <div className="text-lg font-semibold text-white">Professional highlights</div>
+            <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-6 shadow-2xl sm:p-8">
+              <div className="text-lg font-semibold text-white">Professional Highlights</div>
               <ul className="mt-5 space-y-4 text-slate-300">
                 <li>• 24+ years of SQL Server administration and database infrastructure experience</li>
                 <li>• Enterprise engagements with financial institutions, healthcare systems, and large technology organizations</li>
@@ -226,7 +318,7 @@ export default function App() {
           </div>
         </section>
 
-        <section id="services" className="relative mx-auto max-w-7xl px-6 py-16">
+        <section id="services" className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-white">Services</h2>
             <p className="mt-2 max-w-3xl text-slate-400">
@@ -235,7 +327,10 @@ export default function App() {
           </div>
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {services.map((service) => (
-              <div key={service.title} className="group rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-xl backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/[0.07]">
+              <div
+                key={service.title}
+                className="group rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-xl backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/[0.07]"
+              >
                 <h3 className="text-xl font-semibold text-white">{service.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-300">{service.desc}</p>
               </div>
@@ -243,7 +338,46 @@ export default function App() {
           </div>
         </section>
 
-        <section id="testimonials" className="relative mx-auto max-w-7xl px-6 py-16">
+        <section id="case-studies" className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-white">SQL Server Case Studies / Performance Fixes</h2>
+            <p className="mt-2 max-w-3xl text-slate-400">
+              Representative examples of how SQL-IT-Tech Solutions approaches performance recovery, resilience, and production SQL Server troubleshooting.
+            </p>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-3">
+            {caseStudies.map((study) => (
+              <div
+                key={study.title}
+                className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-sm"
+              >
+                <h3 className="text-2xl font-semibold text-white">{study.title}</h3>
+                <div className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
+                  <div>
+                    <div className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-300">
+                      Challenge
+                    </div>
+                    <p className="mt-2">{study.challenge}</p>
+                  </div>
+                  <div>
+                    <div className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-300">
+                      Solution
+                    </div>
+                    <p className="mt-2">{study.solution}</p>
+                  </div>
+                  <div>
+                    <div className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-300">
+                      Outcome
+                    </div>
+                    <p className="mt-2">{study.outcome}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="testimonials" className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
           <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
             <div>
               <h2 className="text-3xl font-bold text-white">Enterprise Client Experience</h2>
@@ -257,7 +391,10 @@ export default function App() {
           </div>
           <div className="grid gap-6 lg:grid-cols-2">
             {testimonials.map((item) => (
-              <div key={item.company} className="rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 shadow-2xl backdrop-blur-sm">
+              <div
+                key={item.company}
+                className="rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 shadow-2xl backdrop-blur-sm"
+              >
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <h3 className="text-xl font-semibold text-white">{item.company}</h3>
@@ -267,7 +404,10 @@ export default function App() {
                 <p className="mt-4 leading-7 text-slate-300">“{item.text}”</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {item.focus.map((tag) => (
-                    <span key={tag} className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-100">
+                    <span
+                      key={tag}
+                      className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-100"
+                    >
                       {tag}
                     </span>
                   ))}
@@ -280,42 +420,40 @@ export default function App() {
           </p>
         </section>
 
-        <section id="github" className="relative mx-auto grid max-w-7xl gap-6 px-6 py-16 md:grid-cols-2">
-          <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-sm">
+        <section
+          id="github"
+          className="relative mx-auto grid max-w-7xl gap-6 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-2"
+        >
+          <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-sm sm:p-8">
             <h2 className="text-3xl font-bold text-white">GitHub Technical Portfolio</h2>
-            <p className="mt-4 leading-7 text-slate-300">
-              Showcase practical work such as migration guides, T-SQL automation, performance health checks,
-              and database reliability frameworks. This is where prospects can see how you think and deliver.
-            </p>
+
             <ul className="mt-6 space-y-3 text-slate-300">
               <li>• SQL Server to AWS RDS / PostgreSQL migration guides</li>
               <li>• Performance tuning and troubleshooting playbooks</li>
               <li>• Data quality validation and duplicate-detection frameworks</li>
               <li>• HA/DR readiness checklists and automation scripts</li>
             </ul>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <a href="https://github.com/lachungo" className="rounded-2xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950" target="_blank" rel="noreferrer">
+
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a
+                href="https://github.com/lachungo/"
+                className="rounded-2xl bg-cyan-400 px-5 py-3 text-center font-semibold text-slate-950"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Open GitHub
               </a>
-              <a href="#videos" className="rounded-2xl border border-white/15 px-5 py-3 font-semibold text-white">
-                See Video Demos
-              </a>
             </div>
-            <p className="mt-4 text-sm text-slate-500">
-              Visit the GitHub profile to review portfolio repositories and migration-focused project work.
-            </p>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-8 shadow-2xl">
-            <div className="text-lg font-semibold text-white">Suggested pinned repositories</div>
+          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-6 shadow-2xl sm:p-8">
+            <div className="text-lg font-semibold text-white">Suggested Pinned Repositories</div>
             <div className="mt-5 grid gap-4">
-              {[
-                'sqlserver-to-aws-rds-postgresql-migration',
-                'sql-server-performance-health-check',
-                'data-quality-duplicate-detection-framework',
-                'ha-dr-readiness-runbook',
-              ].map((repo) => (
-                <div key={repo} className="rounded-2xl border border-white/10 bg-white/5 p-4 font-mono text-sm text-cyan-200">
+              {githubProjects.map((repo) => (
+                <div
+                  key={repo}
+                  className="rounded-2xl border border-white/10 bg-white/5 p-4 font-mono text-sm text-cyan-200"
+                >
                   {repo}
                 </div>
               ))}
@@ -323,29 +461,8 @@ export default function App() {
           </div>
         </section>
 
-        <section id="videos" className="relative mx-auto max-w-7xl px-6 py-16">
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold text-white">Short Technical Video Demos</h2>
-            <p className="mt-2 max-w-3xl text-slate-400">
-              Compact walkthroughs designed for recruiters, hiring managers, and clients who want to see practical migration methods in action.
-            </p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            {demos.map((demo) => (
-              <div key={demo.title} className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-xl backdrop-blur-sm">
-                <div className="mb-4 rounded-2xl border border-dashed border-white/15 bg-slate-900/80 px-4 py-10 text-center text-sm text-slate-500">
-                  Video placeholder
-                </div>
-                <h3 className="text-xl font-semibold text-white">{demo.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-slate-300">{demo.desc}</p>
-                <div className="mt-5 text-sm text-cyan-300">Embed YouTube or Vimeo link here</div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section id="featured-projects" className="relative mx-auto max-w-7xl px-6 py-16">
-          <div className="mb-8 flex items-end justify-between gap-6">
+        <section id="featured-projects" className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
+          <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
               <h2 className="text-3xl font-bold text-white">Featured Consulting Projects</h2>
               <p className="mt-2 max-w-3xl text-slate-400">
@@ -355,7 +472,10 @@ export default function App() {
           </div>
           <div className="grid gap-6 lg:grid-cols-3">
             {featuredProjects.map((project) => (
-              <div key={project.title} className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/8 to-white/[0.03] p-6 shadow-2xl backdrop-blur-sm">
+              <div
+                key={project.title}
+                className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/8 to-white/[0.03] p-6 shadow-2xl backdrop-blur-sm"
+              >
                 <div className="text-sm font-medium text-cyan-300">{project.category}</div>
                 <h3 className="mt-3 text-2xl font-semibold text-white">{project.title}</h3>
                 <p className="mt-4 leading-7 text-slate-300">{project.desc}</p>
@@ -367,39 +487,63 @@ export default function App() {
           </div>
         </section>
 
-        <section id="contact" className="relative mx-auto max-w-7xl px-6 py-16">
+        <section id="contact" className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-sm">
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-sm sm:p-8">
               <h2 className="text-3xl font-bold text-white">Let’s talk</h2>
               <p className="mt-4 leading-7 text-slate-300">
                 For consulting inquiries, migration work, SQL Server performance tuning, HA/DR reviews, or cloud database modernization, reach out directly using the contact details below.
               </p>
-              <div className="mt-6 space-y-3 text-slate-300">
-                <div><span className="font-semibold text-white">Business:</span> SQL-IT-Tech Solutions LLC</div>
-                <div><span className="font-semibold text-white">Phone:</span> <a href="tel:6786294984" className="text-cyan-300 hover:text-cyan-200">678-629-4984</a></div>
-                <div><span className="font-semibold text-white">Location:</span> Atlanta, GA</div>
-                <div><span className="font-semibold text-white">Email:</span> <a href="mailto:achungolm@gmail.com" className="text-cyan-300 hover:text-cyan-200">achungolm@gmail.com</a></div>
-                <div><span className="font-semibold text-white">LinkedIn:</span> <a href="https://www.linkedin.com/in/louis-achungo" target="_blank" rel="noreferrer" className="text-cyan-300 hover:text-cyan-200">linkedin.com/in/louis-achungo</a></div>
-                <div><span className="font-semibold text-white">GitHub:</span> <a href="https://github.com/lachungo" target="_blank" rel="noreferrer" className="text-cyan-300 hover:text-cyan-200">github.com/lachungo</a></div>
+              <div className="mt-6 space-y-3 break-words text-slate-300">
+                <div>
+                  <span className="font-semibold text-white">Business:</span> SQL-IT-Tech Solutions LLC
+                </div>
+                <div>
+                  <span className="font-semibold text-white">Phone:</span>{" "}
+                  <a href="tel:6786294984" className="text-cyan-300 hover:text-cyan-200">
+                    678-629-4984
+                  </a>
+                </div>
+                <div>
+                  <span className="font-semibold text-white">Location:</span> Atlanta, GA
+                </div>
+                <div>
+                  <span className="font-semibold text-white">Email:</span>{" "}
+                  <a href="mailto:achungolm@gmail.com" className="text-cyan-300 hover:text-cyan-200">
+                    achungolm@gmail.com
+                  </a>
+                </div>
+                <div>
+                  <span className="font-semibold text-white">LinkedIn:</span>{" "}
+                  <a
+                    href="https://www.linkedin.com/in/louis-achungo"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-cyan-300 hover:text-cyan-200"
+                  >
+                    linkedin.com/in/louis-achungo
+                  </a>
+                </div>
+                <div>
+                  <span className="font-semibold text-white">GitHub:</span>{" "}
+                  <a
+                    href="https://github.com/lachungo/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-cyan-300 hover:text-cyan-200"
+                  >
+                    github.com/lachungo/
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-cyan-500/10 to-slate-800 p-8 shadow-2xl">
-              <h3 className="text-2xl font-semibold text-white">Suggested next refinements</h3>
-              <ul className="mt-5 space-y-4 text-slate-300">
-                <li>• Add your first 1–3 migration demo videos</li>
-                <li>• Add real project screenshots from sanitized labs</li>
-                <li>• Connect a contact form or calendar booking link</li>
-                <li>• Add a professional headshot to the About section</li>
-                <li>• Replace suggested repo names with your published portfolio repositories</li>
-              </ul>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="border-t border-white/10 bg-[#060d18] px-6 py-8 text-center text-sm text-slate-500">
+      <footer className="border-t border-white/10 bg-[#060d18] px-4 py-8 text-center text-sm text-slate-500 sm:px-6">
         © 2026 SQL-IT-Tech Solutions LLC • Atlanta, GA • Database Administration • Cloud Migration • Performance Tuning
       </footer>
     </div>
-  )
+  );
 }
