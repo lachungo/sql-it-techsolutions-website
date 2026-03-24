@@ -114,9 +114,40 @@ export default function SQLITTechSolutionsWebsite() {
   ];
 
   const githubProjects = [
-    "When to move on-prem SQL Server to PostgreSQL on AWS",
-    "Always On High Availability in Oracle VirtualBox (Home Lab)",
-    "SQL Server Always On Database Refresh Architecture",
+    {
+      title: "When to move on-prem SQL Server to PostgreSQL on AWS",
+      outcome: "Modernization decision framework for cost reduction, portability, and cloud-ready architecture.",
+      href: "https://github.com/lachungo/",
+    },
+    {
+      title: "Always On High Availability in Oracle VirtualBox (Home Lab)",
+      outcome: "Hands-on HA architecture lab demonstrating failover design, replication, and operational resiliency.",
+      href: "https://github.com/lachungo/",
+    },
+    {
+      title: "SQL Server Always On Database Refresh Architecture",
+      outcome: "Enterprise-style refresh and reseeding architecture for controlled data movement in HA environments.",
+      href: "https://github.com/lachungo/",
+    },
+  ];
+
+  const playbooks = [
+    {
+      title: "Blocking & Deadlock Investigation",
+      desc: "Rapid triage approach for identifying blocking chains, lock escalation patterns, and deadlock root causes.",
+    },
+    {
+      title: "TempDB Contention Resolution",
+      desc: "Diagnosis and remediation for allocation contention, file layout issues, and tempdb-related workload bottlenecks.",
+    },
+    {
+      title: "High CPU Query Triage",
+      desc: "Structured investigation of expensive plans, regressions, and inefficient query patterns affecting throughput.",
+    },
+    {
+      title: "Memory Pressure Analysis",
+      desc: "Practical workflow for evaluating SQL memory usage, buffer pressure, grants, and competing workload demand.",
+    },
   ];
 
   return (
@@ -149,11 +180,7 @@ export default function SQLITTechSolutionsWebsite() {
         <div className="border-t border-white/10 lg:hidden">
           <div className="mx-auto flex max-w-7xl gap-4 overflow-x-auto px-4 py-3 text-sm text-slate-300 sm:px-6 [&::-webkit-scrollbar]:hidden">
             {navItems.map(([href, label]) => (
-              <a
-                key={href}
-                href={href}
-                className="whitespace-nowrap hover:text-white"
-              >
+              <a key={href} href={href} className="whitespace-nowrap hover:text-white">
                 {label}
               </a>
             ))}
@@ -203,16 +230,13 @@ export default function SQLITTechSolutionsWebsite() {
               <rect x="420" y="130" rx="18" ry="18" width="200" height="96" />
               <rect x="720" y="130" rx="18" ry="18" width="220" height="96" />
               <rect x="1040" y="130" rx="18" ry="18" width="240" height="96" />
-
               <rect x="180" y="252" rx="18" ry="18" width="220" height="96" />
               <rect x="500" y="252" rx="18" ry="18" width="220" height="96" />
               <rect x="840" y="252" rx="18" ry="18" width="220" height="96" />
               <rect x="1180" y="252" rx="18" ry="18" width="220" height="96" />
-
               <rect x="260" y="432" rx="18" ry="18" width="240" height="96" />
               <rect x="600" y="432" rx="18" ry="18" width="240" height="96" />
               <rect x="940" y="432" rx="18" ry="18" width="240" height="96" />
-
               <rect x="420" y="612" rx="18" ry="18" width="260" height="96" />
               <rect x="840" y="612" rx="18" ry="18" width="280" height="96" />
             </g>
@@ -222,16 +246,13 @@ export default function SQLITTechSolutionsWebsite() {
               <text x="456" y="186">APP TIER</text>
               <text x="774" y="186">SQL SERVER</text>
               <text x="1096" y="186">OBSERVABILITY</text>
-
               <text x="230" y="308">LOAD BALANCER</text>
               <text x="552" y="308">AG LISTENER</text>
               <text x="894" y="308">PRIMARY DB</text>
               <text x="1230" y="308">SECONDARY DB</text>
-
               <text x="318" y="488">BACKUPS</text>
               <text x="656" y="488">DR SITE</text>
               <text x="994" y="488">REPORTING</text>
-
               <text x="494" y="668">AUTOMATION</text>
               <text x="926" y="668">AWS / AZURE</text>
             </g>
@@ -508,139 +529,106 @@ export default function SQLITTechSolutionsWebsite() {
           </p>
         </section>
 
-       <section
-  id="github"
-  className="relative mx-auto grid max-w-7xl gap-6 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-2"
->
-  <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-sm sm:p-8">
-    <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-      <div>
-        <h2 className="text-3xl font-bold text-white">
-          GitHub Technical Portfolio
-        </h2>
-        <p className="mt-2 max-w-2xl text-slate-400">
-          Architecture-driven projects demonstrating SQL Server engineering,
-          high availability, and cloud modernization.
-        </p>
-      </div>
-
-      <a
-        href="https://github.com/lachungo/"
-        target="_blank"
-        rel="noreferrer"
-        className="inline-flex w-fit items-center rounded-2xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950"
-      >
-        Open GitHub
-      </a>
-    </div>
-
-    <div className="mt-8 grid gap-6">
-      {[
-        {
-          title:
-            "When to move on-prem SQL Server to PostgreSQL on AWS",
-          outcome:
-            "Modernization decision framework for cost reduction, scalability, and cloud-native architecture.",
-          href: "https://github.com/lachungo/",
-          image: "/aws-migration.png",
-        },
-        {
-          title:
-            "Always On High Availability in Oracle VirtualBox (Home Lab)",
-          outcome:
-            "Full HA lab showing WSFC clustering, failover behavior, and SQL Server resiliency engineering.",
-          href: "https://github.com/lachungo/",
-          image: "/virtualbox-lab.png",
-        },
-        {
-          title:
-            "SQL Server Always On Database Refresh Architecture",
-          outcome:
-            "Enterprise automation for backup restore chains, AG reseeding, and controlled data refresh pipelines.",
-          href: "https://github.com/lachungo/",
-          image: "/alwayson-refresh.png",
-        },
-      ].map((project) => (
-        <a
-          key={project.title}
-          href={project.href}
-          target="_blank"
-          rel="noreferrer"
-          className="group overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-white/8 to-white/[0.03] transition hover:border-cyan-300/30 hover:bg-white/[0.08]"
+        <section
+          id="github"
+          className="relative mx-auto grid max-w-7xl gap-6 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-2"
         >
-          {/* IMAGE */}
-          <div className="h-52 w-full overflow-hidden">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-            />
-          </div>
-
-          {/* CONTENT */}
-          <div className="p-5">
-            <div className="text-lg font-semibold text-white group-hover:text-cyan-200">
-              {project.title}
+          <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-sm sm:p-8">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <h2 className="text-3xl font-bold text-white">GitHub Technical Portfolio</h2>
+                <p className="mt-2 max-w-2xl text-slate-400">
+                  Selected architecture-led projects that demonstrate database modernization, high availability, and SQL Server engineering depth.
+                </p>
+              </div>
+              <a
+                href="https://github.com/lachungo/"
+                className="inline-flex w-fit items-center rounded-2xl bg-cyan-400 px-5 py-3 text-center font-semibold text-slate-950"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open GitHub
+              </a>
             </div>
 
-            <p className="mt-2 text-sm leading-7 text-slate-300">
-              {project.outcome}
+            <div className="mt-8 grid gap-4">
+              {githubProjects.map((project) => (
+                <div
+                  key={project.title}
+                  className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-white/8 to-white/[0.03]"
+                >
+                  <button
+                    type="button"
+                    onClick={() => window.open(project.image, "_blank")}
+                    className="group block h-52 w-full overflow-hidden text-left"
+                  >
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  </button>
+
+                  <div className="p-5">
+                    <div className="text-lg font-semibold text-white">{project.title}</div>
+                    <p className="mt-2 text-sm leading-7 text-slate-300">{project.outcome}</p>
+                    <a
+                      href={project.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 inline-block text-sm font-medium text-cyan-300 hover:text-cyan-200"
+                    >
+                      View project →
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-6 shadow-2xl sm:p-8">
+            <div className="text-lg font-semibold text-white">SQL Server Troubleshooting Toolkit</div>
+            <p className="mt-2 text-slate-400">
+              Core playbooks used to approach performance engineering, resiliency, and production database stabilization.
             </p>
-
-            <div className="mt-4 text-sm font-medium text-cyan-300">
-              View project →
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              {playbooks.map((playbook) => (
+                <div key={playbook.title} className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <div className="text-sm font-semibold text-white">{playbook.title}</div>
+                  <div className="mt-2 text-sm leading-6 text-slate-400">{playbook.desc}</div>
+                </div>
+              ))}
             </div>
           </div>
-        </a>
-      ))}
-    </div>
-  </div>
+        </section>
 
-  {/* RIGHT SIDE TOOLKIT */}
-  <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-6 shadow-2xl sm:p-8">
-    <div className="text-lg font-semibold text-white">
-      SQL Server Troubleshooting Toolkit
-    </div>
-
-    <p className="mt-2 text-slate-400">
-      Structured playbooks used to diagnose and stabilize enterprise SQL Server environments.
-    </p>
-
-    <div className="mt-6 grid gap-4 sm:grid-cols-2">
-      {[
-        {
-          title: "Blocking & Deadlocks",
-          desc: "Identify blocking chains, resolve deadlocks, and restore concurrency.",
-        },
-        {
-          title: "TempDB Contention",
-          desc: "Fix allocation bottlenecks and tempdb configuration issues.",
-        },
-        {
-          title: "High CPU Queries",
-          desc: "Tune execution plans and eliminate expensive query patterns.",
-        },
-        {
-          title: "Memory Pressure",
-          desc: "Analyze grants, buffer pool, and memory usage patterns.",
-        },
-      ].map((item) => (
-        <div
-          key={item.title}
-          className="rounded-2xl border border-white/10 bg-white/5 p-4"
-        >
-          <div className="text-sm font-semibold text-white">
-            {item.title}
-          </div>
-          <div className="mt-2 text-sm text-slate-400">
-            {item.desc}
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
         <section id="featured-projects" className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
+          <div className="mb-8 rounded-[2rem] border border-white/10 bg-gradient-to-r from-cyan-400/10 via-white/5 to-blue-500/10 p-6 shadow-2xl backdrop-blur-sm">
+            <div className="grid gap-4 md:grid-cols-3">
+              <div>
+                <div className="text-xs uppercase tracking-[0.25em] text-cyan-300">Engagement Model</div>
+                <div className="mt-2 text-xl font-semibold text-white">Assess</div>
+                <p className="mt-2 text-sm leading-7 text-slate-300">
+                  Review architecture, risks, performance signals, and recovery posture across the environment.
+                </p>
+              </div>
+              <div>
+                <div className="text-xs uppercase tracking-[0.25em] text-cyan-300">Execution Model</div>
+                <div className="mt-2 text-xl font-semibold text-white">Stabilize</div>
+                <p className="mt-2 text-sm leading-7 text-slate-300">
+                  Prioritize remediation, tune workload behavior, validate backups, and reduce operational risk quickly.
+                </p>
+              </div>
+              <div>
+                <div className="text-xs uppercase tracking-[0.25em] text-cyan-300">Modernization Model</div>
+                <div className="mt-2 text-xl font-semibold text-white">Modernize</div>
+                <p className="mt-2 text-sm leading-7 text-slate-300">
+                  Design cloud-ready architecture, improve resilience, and support migration paths to AWS and Azure.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
               <h2 className="text-3xl font-bold text-white">Featured Consulting Projects</h2>
