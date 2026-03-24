@@ -242,7 +242,7 @@ export default function SQLITTechSolutionsWebsite() {
               </div>
 
               <h1 className="max-w-4xl text-4xl font-semibold leading-[1.0] tracking-tight text-white sm:text-5xl md:text-6xl xl:text-[4rem]">
-                Enterprise SQL Databases. Simplified.
+                Enterprise SQL Databases Architecture. Simplified.
               </h1>
 
               <p className="mt-6 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg md:text-xl md:leading-8">
