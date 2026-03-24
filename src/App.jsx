@@ -508,47 +508,138 @@ export default function SQLITTechSolutionsWebsite() {
           </p>
         </section>
 
-        <section
-          id="github"
-          className="relative mx-auto grid max-w-7xl gap-6 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-2"
+       <section
+  id="github"
+  className="relative mx-auto grid max-w-7xl gap-6 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-2"
+>
+  <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-sm sm:p-8">
+    <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <h2 className="text-3xl font-bold text-white">
+          GitHub Technical Portfolio
+        </h2>
+        <p className="mt-2 max-w-2xl text-slate-400">
+          Architecture-driven projects demonstrating SQL Server engineering,
+          high availability, and cloud modernization.
+        </p>
+      </div>
+
+      <a
+        href="https://github.com/lachungo/"
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex w-fit items-center rounded-2xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950"
+      >
+        Open GitHub
+      </a>
+    </div>
+
+    <div className="mt-8 grid gap-6">
+      {[
+        {
+          title:
+            "When to move on-prem SQL Server to PostgreSQL on AWS",
+          outcome:
+            "Modernization decision framework for cost reduction, scalability, and cloud-native architecture.",
+          href: "https://github.com/lachungo/",
+          image: "/aws-migration.png",
+        },
+        {
+          title:
+            "Always On High Availability in Oracle VirtualBox (Home Lab)",
+          outcome:
+            "Full HA lab showing WSFC clustering, failover behavior, and SQL Server resiliency engineering.",
+          href: "https://github.com/lachungo/",
+          image: "/virtualbox-lab.png",
+        },
+        {
+          title:
+            "SQL Server Always On Database Refresh Architecture",
+          outcome:
+            "Enterprise automation for backup restore chains, AG reseeding, and controlled data refresh pipelines.",
+          href: "https://github.com/lachungo/",
+          image: "/alwayson-refresh.png",
+        },
+      ].map((project) => (
+        <a
+          key={project.title}
+          href={project.href}
+          target="_blank"
+          rel="noreferrer"
+          className="group overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-white/8 to-white/[0.03] transition hover:border-cyan-300/30 hover:bg-white/[0.08]"
         >
-          <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-sm sm:p-8">
-            <h2 className="text-3xl font-bold text-white">GitHub Technical Portfolio</h2>
-
-            <ul className="mt-6 space-y-3 text-slate-300">
-              <li>• SQL Server to AWS RDS / PostgreSQL migration guides</li>
-              <li>• Performance tuning and troubleshooting playbooks</li>
-              <li>• Data quality validation and duplicate-detection frameworks</li>
-              <li>• HA/DR readiness checklists and automation scripts</li>
-            </ul>
-
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <a
-                href="https://github.com/lachungo/"
-                className="rounded-2xl bg-cyan-400 px-5 py-3 text-center font-semibold text-slate-950"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Open GitHub
-              </a>
-            </div>
+          {/* IMAGE */}
+          <div className="h-52 w-full overflow-hidden">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            />
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-6 shadow-2xl sm:p-8">
-            <div className="text-lg font-semibold text-white">Suggested Pinned Repositories</div>
-            <div className="mt-5 grid gap-4">
-              {githubProjects.map((repo) => (
-                <div
-                  key={repo}
-                  className="rounded-2xl border border-white/10 bg-white/5 p-4 font-mono text-sm text-cyan-200"
-                >
-                  {repo}
-                </div>
-              ))}
+          {/* CONTENT */}
+          <div className="p-5">
+            <div className="text-lg font-semibold text-white group-hover:text-cyan-200">
+              {project.title}
+            </div>
+
+            <p className="mt-2 text-sm leading-7 text-slate-300">
+              {project.outcome}
+            </p>
+
+            <div className="mt-4 text-sm font-medium text-cyan-300">
+              View project →
             </div>
           </div>
-        </section>
+        </a>
+      ))}
+    </div>
+  </div>
 
+  {/* RIGHT SIDE TOOLKIT */}
+  <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-6 shadow-2xl sm:p-8">
+    <div className="text-lg font-semibold text-white">
+      SQL Server Troubleshooting Toolkit
+    </div>
+
+    <p className="mt-2 text-slate-400">
+      Structured playbooks used to diagnose and stabilize enterprise SQL Server environments.
+    </p>
+
+    <div className="mt-6 grid gap-4 sm:grid-cols-2">
+      {[
+        {
+          title: "Blocking & Deadlocks",
+          desc: "Identify blocking chains, resolve deadlocks, and restore concurrency.",
+        },
+        {
+          title: "TempDB Contention",
+          desc: "Fix allocation bottlenecks and tempdb configuration issues.",
+        },
+        {
+          title: "High CPU Queries",
+          desc: "Tune execution plans and eliminate expensive query patterns.",
+        },
+        {
+          title: "Memory Pressure",
+          desc: "Analyze grants, buffer pool, and memory usage patterns.",
+        },
+      ].map((item) => (
+        <div
+          key={item.title}
+          className="rounded-2xl border border-white/10 bg-white/5 p-4"
+        >
+          <div className="text-sm font-semibold text-white">
+            {item.title}
+          </div>
+          <div className="mt-2 text-sm text-slate-400">
+            {item.desc}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
         <section id="featured-projects" className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
           <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
