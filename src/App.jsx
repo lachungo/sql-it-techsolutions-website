@@ -118,7 +118,7 @@ export default function SQLITTechSolutionsWebsite() {
       title: "Agentic AI DBA Assessment Toolkit",
       outcome: "AI-driven SQL Server assessment toolkit that generates vulnerability reports, performance insights, and best-practice recommendations for enterprise environments.",
       href: "https://github.com/lachungo/",
-      image: "/ai-dba-toolkit.png",
+      image: "/assessment-reports-toolkit-diagram.png",
     },
     {
       title: "When to move on-prem SQL Server to PostgreSQL on AWS",
