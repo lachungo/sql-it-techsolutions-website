@@ -438,80 +438,7 @@ export default function SQLITTechSolutionsWebsite() {
 
         
 
-        <section
-          id="github"
-          className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14"
-        >
-          {/* TOOLKIT FIRST - SINGLE ROW */}
-          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 via-cyan-400/10 to-emerald-400/10 p-5 shadow-2xl sm:p-8">
-            <div className="text-lg font-semibold text-white">SQL Server Troubleshooting Toolkit</div>
-            <p className="mt-2 text-slate-400">
-              Core playbooks used to approach performance engineering, resiliency, and production database stabilization.
-            </p>
-
-            <div className="mt-6 grid gap-4 lg:grid-cols-4">
-              {playbooks.map((playbook) => (
-                <div key={playbook.title} className="rounded-2xl border border-white/10 bg-cyan-400/10 p-4">
-                  <div className="text-sm font-semibold text-white">{playbook.title}</div>
-                  <div className="mt-2 text-sm leading-6 text-slate-400">{playbook.desc}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* GITHUB PROJECTS - SINGLE ROW */}
-          <div className="mt-10 rounded-[2rem] border border-cyan-400/20 bg-cyan-400/10 p-5 shadow-2xl backdrop-blur-sm sm:p-8">
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <h2 className="text-3xl font-bold text-white">GitHub Technical Portfolio</h2>
-                <p className="mt-2 max-w-2xl text-slate-400">
-                  Selected architecture-led projects that demonstrate database modernization, high availability, and SQL Server engineering depth.
-                </p>
-              </div>
-              <a
-                href="https://github.com/lachungo/"
-                className="inline-flex w-fit items-center rounded-2xl bg-cyan-400 px-5 py-3 text-center font-semibold text-slate-950"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Open GitHub
-              </a>
-            </div>
-
-            <div className="mt-8 grid gap-4 lg:grid-cols-3">
-              {githubProjects.map((project) => (
-                <div
-                  key={project.title}
-                  className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 to-emerald-400/10 shadow-xl"
-                >
-                  <div
-                    className="group block h-44 w-full overflow-hidden text-left sm:h-56 cursor-pointer"
-                    onClick={() => window.open(project.image, "_blank")}
-                  >
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                    />
-                  </div>
-
-                  <div className="p-5">
-                    <div className="text-lg font-semibold text-white">{project.title}</div>
-                    <p className="mt-2 text-sm leading-7 text-slate-300">{project.outcome}</p>
-                    <a
-                      href={project.href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-4 inline-block text-sm font-medium text-cyan-300 hover:text-cyan-200"
-                    >
-                      View project →
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        
 
         <section id="featured-projects" className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">
           <div className="mb-8 rounded-[2rem] border border-white/10 bg-gradient-to-r from-cyan-400/10 via-white/5 to-blue-500/10 p-5 shadow-2xl backdrop-blur-sm sm:p-6">
@@ -604,6 +531,81 @@ export default function SQLITTechSolutionsWebsite() {
           <p className="mt-5 text-xs text-slate-500">
             Representative summaries are intended for portfolio presentation and are not formal endorsements.
           </p>
+        </section>
+
+        <section
+          id="github"
+          className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14"
+        >
+          {/* TOOLKIT FIRST - SINGLE ROW */}
+          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 via-cyan-400/10 to-emerald-400/10 p-5 shadow-2xl sm:p-8">
+            <div className="text-lg font-semibold text-white">SQL Server Troubleshooting Toolkit</div>
+            <p className="mt-2 text-slate-400">
+              Core playbooks used to approach performance engineering, resiliency, and production database stabilization.
+            </p>
+
+            <div className="mt-6 grid gap-4 lg:grid-cols-4">
+              {playbooks.map((playbook) => (
+                <div key={playbook.title} className="rounded-2xl border border-white/10 bg-cyan-400/10 p-4">
+                  <div className="text-sm font-semibold text-white">{playbook.title}</div>
+                  <div className="mt-2 text-sm leading-6 text-slate-400">{playbook.desc}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* GITHUB PROJECTS - SINGLE ROW */}
+          <div className="mt-10 rounded-[2rem] border border-cyan-400/20 bg-cyan-400/10 p-5 shadow-2xl backdrop-blur-sm sm:p-8">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <h2 className="text-3xl font-bold text-white">GitHub Technical Portfolio</h2>
+                <p className="mt-2 max-w-2xl text-slate-400">
+                  Selected architecture-led projects that demonstrate database modernization, high availability, and SQL Server engineering depth.
+                </p>
+              </div>
+              <a
+                href="https://github.com/lachungo/"
+                className="inline-flex w-fit items-center rounded-2xl bg-cyan-400 px-5 py-3 text-center font-semibold text-slate-950"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open GitHub
+              </a>
+            </div>
+
+            <div className="mt-8 grid gap-4 lg:grid-cols-3">
+              {githubProjects.map((project) => (
+                <div
+                  key={project.title}
+                  className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 to-emerald-400/10 shadow-xl"
+                >
+                  <div
+                    className="group block h-44 w-full overflow-hidden text-left sm:h-56 cursor-pointer"
+                    onClick={() => window.open(project.image, "_blank")}
+                  >
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  </div>
+
+                  <div className="p-5">
+                    <div className="text-lg font-semibold text-white">{project.title}</div>
+                    <p className="mt-2 text-sm leading-7 text-slate-300">{project.outcome}</p>
+                    <a
+                      href={project.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 inline-block text-sm font-medium text-cyan-300 hover:text-cyan-200"
+                    >
+                      View project →
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         <section id="contact" className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">
