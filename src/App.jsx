@@ -115,6 +115,12 @@ export default function SQLITTechSolutionsWebsite() {
 
   const githubProjects = [
     {
+      title: "Agentic AI DBA Assessment Toolkit",
+      outcome: "AI-driven SQL Server assessment toolkit that generates vulnerability reports, performance insights, and best-practice recommendations for enterprise environments.",
+      href: "https://github.com/lachungo/",
+      image: "/ai-dba-toolkit.png",
+    },
+    {
       title: "When to move on-prem SQL Server to PostgreSQL on AWS",
       outcome: "Modernization decision framework for cost reduction, portability, and cloud-ready architecture.",
       href: "https://github.com/lachungo/",
@@ -430,48 +436,7 @@ export default function SQLITTechSolutionsWebsite() {
           </div>
         </section>
 
-        <section id="testimonials" className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">
-          <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-            <div>
-              <h2 className="text-3xl font-bold text-white">Enterprise Client Experience</h2>
-              <p className="mt-2 max-w-3xl text-slate-400">
-                Selected representative engagements reflecting work delivered as a contracted database specialist.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-3 text-xs text-slate-400">
-              Company names are shown to describe professional experience only.
-            </div>
-          </div>
-          <div className="grid gap-4 lg:grid-cols-2 sm:gap-6">
-            {testimonials.map((item) => (
-              <div
-                key={item.company}
-                className="rounded-[2rem] border border-white/10 bg-cyan-400/10 p-5 shadow-2xl backdrop-blur-sm sm:p-6"
-              >
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <h3 className="text-xl font-semibold text-white">{item.company}</h3>
-                    <p className="mt-1 text-sm text-cyan-300">{item.role}</p>
-                  </div>
-                </div>
-                <p className="mt-4 leading-7 text-slate-300">“{item.text}”</p>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {item.focus.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-100"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="mt-5 text-xs text-slate-500">
-            Representative summaries are intended for portfolio presentation and are not formal endorsements.
-          </p>
-        </section>
+        
 
         <section
           id="github"
@@ -495,7 +460,7 @@ export default function SQLITTechSolutionsWebsite() {
               </a>
             </div>
 
-            <div className="mt-8 grid gap-4">
+            <div className="mt-8 grid gap-4 md:grid-cols-2">
               {githubProjects.map((project) => (
                 <div
                   key={project.title}
@@ -535,7 +500,7 @@ export default function SQLITTechSolutionsWebsite() {
             <p className="mt-2 text-slate-400">
               Core playbooks used to approach performance engineering, resiliency, and production database stabilization.
             </p>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
               {playbooks.map((playbook) => (
                 <div key={playbook.title} className="rounded-2xl border border-white/10 bg-cyan-400/10 p-4">
                   <div className="text-sm font-semibold text-white">{playbook.title}</div>
@@ -594,6 +559,49 @@ export default function SQLITTechSolutionsWebsite() {
               </div>
             ))}
           </div>
+        </section>
+
+        <section id="testimonials" className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">
+          <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <h2 className="text-3xl font-bold text-white">Enterprise Client Experience</h2>
+              <p className="mt-2 max-w-3xl text-slate-400">
+                Selected representative engagements reflecting work delivered as a contracted database specialist.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-3 text-xs text-slate-400">
+              Company names are shown to describe professional experience only.
+            </div>
+          </div>
+          <div className="grid gap-4 lg:grid-cols-2 sm:gap-6">
+            {testimonials.map((item) => (
+              <div
+                key={item.company}
+                className="rounded-[2rem] border border-white/10 bg-cyan-400/10 p-5 shadow-2xl backdrop-blur-sm sm:p-6"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-xl font-semibold text-white">{item.company}</h3>
+                    <p className="mt-1 text-sm text-cyan-300">{item.role}</p>
+                  </div>
+                </div>
+                <p className="mt-4 leading-7 text-slate-300">“{item.text}”</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {item.focus.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-100"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="mt-5 text-xs text-slate-500">
+            Representative summaries are intended for portfolio presentation and are not formal endorsements.
+          </p>
         </section>
 
         <section id="contact" className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">
