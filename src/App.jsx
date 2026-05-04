@@ -113,32 +113,45 @@ export default function SQLITTechSolutionsWebsite() {
     ["#contact", "Contact"],
   ];
 
-  const githubProjects = [
-    {
-      title: "Agentic AI DBA Assessment Toolkit",
-      outcome: "AI-driven SQL Server assessment toolkit that generates vulnerability reports, performance insights, and best-practice recommendations for enterprise environments.",
-      href: "https://github.com/lachungo/",
-      image: "/assessment-reports-toolkit-diagram.png",
-    },
-    {
-      title: "When to move on-prem SQL Server to PostgreSQL on AWS",
-      outcome: "Modernization decision framework for cost reduction, portability, and cloud-ready architecture.",
-      href: "https://github.com/lachungo/",
-      image: "/aws-migration.png",
-    },
-    {
-      title: "Always On High Availability in Oracle VirtualBox (Home Lab)",
-      outcome: "Hands-on HA architecture lab demonstrating failover design, replication, and operational resiliency.",
-      href: "https://github.com/lachungo/",
-      image: "/virtualbox-lab.png",
-    },
-    {
-      title: "SQL Server Always On Database Refresh Architecture",
-      outcome: "Enterprise-style refresh and reseeding architecture for controlled data movement in HA environments.",
-      href: "https://github.com/lachungo/",
-      image: "/alwayson-refresh.png",
-    },
-  ];
+  // 🔥 ONLY CHANGE: githubProjects updated + CPU RCA added FIRST
+
+const githubProjects = [
+  {
+    title: "Diagnosing CPU Saturation in SQL Server Always On (Azure)",
+    outcome:
+      "Production-grade root cause analysis using wait stats, scheduler pressure, and workload correlation. Identified CPU scheduler saturation and implemented a near-zero downtime scaling strategy.",
+    href: "https://github.com/lachungo/sql-server-cpu-saturation-rca",
+    image: "/cpu-rca.png",
+  },
+  {
+    title: "Agentic AI DBA Assessment Toolkit",
+    outcome:
+      "AI-driven SQL Server assessment toolkit that generates vulnerability reports, performance insights, and best-practice recommendations for enterprise environments.",
+    href: "https://github.com/lachungo/",
+    image: "/assessment-reports-toolkit-diagram.png",
+  },
+  {
+    title: "When to move on-prem SQL Server to PostgreSQL on AWS",
+    outcome:
+      "Modernization decision framework for cost reduction, portability, and cloud-ready architecture.",
+    href: "https://github.com/lachungo/",
+    image: "/aws-migration.png",
+  },
+  {
+    title: "Always On High Availability in Oracle VirtualBox (Home Lab)",
+    outcome:
+      "Hands-on HA architecture lab demonstrating failover design, replication, and operational resiliency.",
+    href: "https://github.com/lachungo/",
+    image: "/virtualbox-lab.png",
+  },
+  {
+    title: "SQL Server Always On Database Refresh Architecture",
+    outcome:
+      "Enterprise-style refresh and reseeding architecture for controlled data movement in HA environments.",
+    href: "https://github.com/lachungo/",
+    image: "/alwayson-refresh.png",
+  },
+];
 
   const playbooks = [
     {
