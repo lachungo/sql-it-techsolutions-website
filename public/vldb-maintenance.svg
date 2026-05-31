@@ -1,0 +1,38 @@
+﻿<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" fill="#050b14"/>
+  <rect x="70" y="70" width="1060" height="560" rx="28" fill="#07111f" stroke="#22d3ee" stroke-width="3"/>
+
+  <text x="100" y="145" fill="#ffffff" font-family="Arial" font-size="44" font-weight="700">
+    SQL Server VLDB Maintenance
+  </text>
+  <text x="100" y="200" fill="#93c5fd" font-family="Arial" font-size="28">
+    Queue-Based Index Maintenance & Orchestration Platform
+  </text>
+
+  <rect x="100" y="275" width="210" height="85" rx="16" fill="#1e40af"/>
+  <text x="132" y="327" fill="#ffffff" font-family="Arial" font-size="24" font-weight="700">Capture</text>
+
+  <rect x="375" y="275" width="210" height="85" rx="16" fill="#047857"/>
+  <text x="420" y="327" fill="#ffffff" font-family="Arial" font-size="24" font-weight="700">Queue</text>
+
+  <rect x="650" y="275" width="210" height="85" rx="16" fill="#b45309"/>
+  <text x="695" y="327" fill="#ffffff" font-family="Arial" font-size="24" font-weight="700">Execute</text>
+
+  <rect x="925" y="275" width="160" height="85" rx="16" fill="#7c3aed"/>
+  <text x="960" y="327" fill="#ffffff" font-family="Arial" font-size="24" font-weight="700">Report</text>
+
+  <line x1="310" y1="317" x2="375" y2="317" stroke="#ffffff" stroke-width="5"/>
+  <line x1="585" y1="317" x2="650" y2="317" stroke="#ffffff" stroke-width="5"/>
+  <line x1="860" y1="317" x2="925" y2="317" stroke="#ffffff" stroke-width="5"/>
+
+  <text x="100" y="455" fill="#ffffff" font-family="Arial" font-size="30" font-weight="700">
+    AG-Aware • Resumable • Observable • Recoverable
+  </text>
+
+  <text x="100" y="520" fill="#d1d5db" font-family="Arial" font-size="24">
+    Built for multi-terabyte SQL Server environments where traditional maintenance
+  </text>
+  <text x="100" y="555" fill="#d1d5db" font-family="Arial" font-size="24">
+    approaches become difficult due to maintenance windows, log growth, and HA requirements.
+  </text>
+</svg>

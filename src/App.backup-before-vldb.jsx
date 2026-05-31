@@ -1,4 +1,4 @@
-﻿export default function SQLITTechSolutionsWebsite() {
+export default function SQLITTechSolutionsWebsite() {
   const testimonials = [
     {
       company: "Huntington Bank",
@@ -53,11 +53,6 @@
 
   const featuredProjects = [
     {
-      title: "SQL Server VLDB Index Maintenance & Orchestration Platform",
-      category: "Enterprise database architecture",
-      desc: "Custom queue-based index maintenance orchestration platform built for multi-terabyte SQL Server environments featuring AG-aware execution, resumable maintenance windows, progress tracking, drive-space protection, transaction log management, and recovery workflows.",
-    },
-    {
       title: "SQL Server to AWS RDS Migration Lab",
       category: "Cloud modernization",
       desc: "A portfolio-ready migration walkthrough covering assessment, backup strategy, restore flow, validation, and post-migration hardening.",
@@ -76,15 +71,6 @@
 
   const caseStudies = [
     {
-      title: "VLDB Index Maintenance Orchestration Platform",
-      challenge:
-        "Traditional maintenance approaches become increasingly difficult when database sizes reach multiple terabytes due to maintenance windows, transaction log growth, large index sizes, and Always On Availability Group requirements.",
-      solution:
-        "Designed a custom queue-based orchestration platform featuring fragmentation baselining, queue-driven execution, resumable maintenance windows, AG-aware controls, operational reporting, drive-space protection, and recovery workflows.",
-      outcome:
-        "Successfully established a VLDB fragmentation baseline, validated queue-based execution, reduced operational risk, enabled maintenance resumption across windows, and created a framework capable of supporting continuous maintenance at enterprise scale.",
-    },
-    {
       title: "High-Transaction Blocking & Concurrency Recovery",
       challenge:
         "Production databases under sustained heavy load experienced blocking chains, slow response times, and unstable transaction throughput.",
@@ -100,7 +86,7 @@
       solution:
         "Used a structured assessment approach covering Query Store, wait stats, memory pressure, tempdb behavior, storage latency, and plan regression patterns.",
       outcome:
-        "Identified top high-cost queries, reduced average query duration, and established monitoring baselines using Query Store and wait-stat tracking.",
+        "Identified top 10 high-cost queries, reduced average query duration by ~50%, and established monitoring baselines using Query Store and wait-stat tracking.",
     },
     {
       title: "Backup, Restore, and HA/DR Validation Improvements",
@@ -115,7 +101,6 @@
 
   const metrics = [
     ["24+", "Years of SQL Server experience"],
-    ["32 TB", "Largest production environment supported"],
     ["Enterprise", "Banking, healthcare, and technology environments"],
     ["AWS + Azure", "Modernization and migration capability"],
   ];
@@ -128,16 +113,9 @@
     ["#contact", "Contact"],
   ];
 
-  // ðŸ”¥ ONLY CHANGE: githubProjects updated + CPU RCA added FIRST
+  // 🔥 ONLY CHANGE: githubProjects updated + CPU RCA added FIRST
 
 const githubProjects = [
-  {
-    title: "SQL Server VLDB Index Maintenance & Orchestration Platform",
-    outcome:
-      "Enterprise queue-based maintenance orchestration platform for multi-terabyte SQL Server environments featuring AG-aware execution, resumable maintenance windows, progress tracking, drive-space protection, transaction log growth management, and recovery workflows.",
-    href: "https://github.com/lachungo/sql-server-vldb-index-maintenance-framework",
-    image: "/vldb-maintenance.svg",
-  },
   {
     title: "Diagnosing CPU Saturation in SQL Server Always On (Azure)",
     outcome:
@@ -158,6 +136,13 @@ const githubProjects = [
       "Modernization decision framework for cost reduction, portability, and cloud-ready architecture.",
     href: "https://github.com/lachungo/",
     image: "/aws-migration.png",
+  },
+  {
+    title: "Always On High Availability in Oracle VirtualBox (Home Lab)",
+    outcome:
+      "Hands-on HA architecture lab demonstrating failover design, replication, and operational resiliency.",
+    href: "https://github.com/lachungo/",
+    image: "/virtualbox-lab.png",
   },
   {
     title: "SQL Server Always On Database Refresh Architecture",
@@ -200,7 +185,7 @@ const githubProjects = [
                 SQL-IT-Tech Solutions LLC
               </div>
               <div className="truncate text-[11px] text-slate-400 sm:text-sm">
-                Atlanta, GA â€¢ Senior SQL Server Consulting â€¢ Cloud Modernization
+                Atlanta, GA • Senior SQL Server Consulting • Cloud Modernization
               </div>
             </div>
           </div>
@@ -280,13 +265,13 @@ const githubProjects = [
               </h1>
 
               <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-300 sm:text-base sm:leading-7 md:text-lg md:leading-8">
-                Stabilize production systems, eliminate performance bottlenecks, and modernize SQL Server environments across AWS and Azure â€” without risking downtime.
+                Stabilize production systems, eliminate performance bottlenecks, and modernize SQL Server environments across AWS and Azure — without risking downtime.
               </p>
 
               <div className="mt-4 flex flex-col gap-2 text-xs text-slate-400 sm:mt-5 sm:flex-row sm:flex-wrap sm:gap-4 sm:text-sm">
-                <span>âœ” 24+ years experience</span>
-                <span>âœ” Banking & healthcare systems</span>
-                <span>âœ” High-transaction environments</span>
+                <span>✔ 24+ years experience</span>
+                <span>✔ Banking & healthcare systems</span>
+                <span>✔ High-transaction environments</span>
               </div>
 
               <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row">
@@ -308,16 +293,16 @@ const githubProjects = [
               <div className="mt-6 rounded-2xl border border-cyan-300/20 bg-cyan-400/10 p-4 text-sm text-cyan-100 sm:mt-8">
                 <div className="grid gap-2 sm:grid-cols-2">
                   <div className="rounded-2xl border border-white/10 bg-cyan-400/10 px-4 py-3 text-xs sm:text-sm">
-                    âœ” Reduced blocking by up to 70%
+                    ✔ Reduced blocking by up to 70%
                   </div>
                   <div className="rounded-2xl border border-white/10 bg-cyan-400/10 px-4 py-3 text-xs sm:text-sm">
-                    âœ” Cut query latency by ~50%
+                    ✔ Cut query latency by ~50%
                   </div>
                   <div className="rounded-2xl border border-white/10 bg-cyan-400/10 px-4 py-3 text-xs sm:text-sm">
-                    âœ” Restored sub-second response times
+                    ✔ Restored sub-second response times
                   </div>
                   <div className="rounded-2xl border border-white/10 bg-cyan-400/10 px-4 py-3 text-xs sm:text-sm">
-                    âœ” Validated HA/DR against RTO targets
+                    ✔ Validated HA/DR against RTO targets
                   </div>
                 </div>
               </div>
@@ -395,11 +380,11 @@ const githubProjects = [
             <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-cyan-400/10 via-cyan-400/10 to-emerald-400/10 p-5 shadow-2xl sm:p-8">
               <div className="text-lg font-semibold text-white">Professional Highlights</div>
               <ul className="mt-5 space-y-4 text-slate-300">
-                <li>â€¢ 24+ years of SQL Server administration and database infrastructure experience</li>
-                <li>â€¢ Enterprise engagements with financial institutions, healthcare systems, and large technology organizations</li>
-                <li>â€¢ Deep expertise in SQL Server performance tuning, HA/DR architecture, and production troubleshooting</li>
-                <li>â€¢ Experience supporting high-transaction systems and regulated industry environments</li>
-                <li>â€¢ Hands-on work with cloud database platforms including AWS RDS, PostgreSQL targets, and Azure SQL</li>
+                <li>• 24+ years of SQL Server administration and database infrastructure experience</li>
+                <li>• Enterprise engagements with financial institutions, healthcare systems, and large technology organizations</li>
+                <li>• Deep expertise in SQL Server performance tuning, HA/DR architecture, and production troubleshooting</li>
+                <li>• Experience supporting high-transaction systems and regulated industry environments</li>
+                <li>• Hands-on work with cloud database platforms including AWS RDS, PostgreSQL targets, and Azure SQL</li>
               </ul>
             </div>
           </div>
@@ -542,7 +527,7 @@ const githubProjects = [
                     <p className="mt-1 text-sm text-cyan-300">{item.role}</p>
                   </div>
                 </div>
-                <p className="mt-4 leading-7 text-slate-300">â€œ{item.text}â€</p>
+                <p className="mt-4 leading-7 text-slate-300">“{item.text}”</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {item.focus.map((tag) => (
                     <span
@@ -627,7 +612,7 @@ const githubProjects = [
                       rel="noreferrer"
                       className="mt-4 inline-block text-sm font-medium text-cyan-300 hover:text-cyan-200"
                     >
-                      View project â†’
+                      View project →
                     </a>
                   </div>
                 </div>
@@ -639,7 +624,7 @@ const githubProjects = [
         <section id="contact" className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">
           <div className="grid gap-6 md:grid-cols-2">
             <div className="rounded-[2rem] border border-cyan-400/20 bg-cyan-400/10 p-5 shadow-2xl backdrop-blur-sm sm:p-8">
-              <h2 className="text-3xl font-bold text-white">Letâ€™s talk</h2>
+              <h2 className="text-3xl font-bold text-white">Let’s talk</h2>
               <p className="mt-4 leading-7 text-slate-300">
                 For consulting inquiries, migration work, SQL Server performance tuning, HA/DR reviews, or cloud database modernization, reach out directly using the contact details below.
               </p>
@@ -691,9 +676,8 @@ const githubProjects = [
       </main>
 
       <footer className="border-t border-white/10 bg-[#060d18] px-4 py-8 text-center text-sm text-slate-500 sm:px-6">
-        Â© 2026 SQL-IT-Tech Solutions LLC â€¢ Atlanta, GA â€¢ Database Administration â€¢ Cloud Migration â€¢ Performance Tuning
+        © 2026 SQL-IT-Tech Solutions LLC • Atlanta, GA • Database Administration • Cloud Migration • Performance Tuning
       </footer>
     </div>
   );
 }
-
