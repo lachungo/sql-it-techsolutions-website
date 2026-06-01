@@ -136,7 +136,7 @@ const githubProjects = [
     outcome:
       "Enterprise-grade VLDB maintenance orchestration platform engineered for 32TB+ SQL Server Always On environments. Features intelligent fragmentation analysis, queue-based execution, resumable index operations, AG-aware routing, observability-driven scheduling, transaction log protection, and autonomous recovery workflows. Designed to reduce maintenance windows while avoiding costly Azure Hyperscale adoption and third-party maintenance tools.",
     href: "https://github.com/lachungo/sql-server-vldb-index-maintenance-framework",
-    image: "/vldb-maintenance.svg",
+    image: "/sql-server-vldb-index-maintenance-orchestration.png",
   },
   {
     title: "Diagnosing CPU Saturation in SQL Server Always On (Azure)",
